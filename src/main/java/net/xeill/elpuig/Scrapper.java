@@ -65,6 +65,7 @@ public class Scrapper{
         }
         driver.quit();
     }
+
     public void sacarllaves() throws InterruptedException {
         FirefoxOptions options = new FirefoxOptions();
         WebDriver driver = new FirefoxDriver(options);
@@ -75,62 +76,117 @@ public class Scrapper{
 
         ArrayList<String> enlaces = new ArrayList<>();
 
+        //Con este bucle recorremos todas las llaves
         for (WebElement fila : filaDeLlaves) {
 
             List<WebElement> llaves = fila.findElements(By.className("kxmatkcipwonxvwweiqqdoumxg"));
             for (WebElement llave : llaves) {
-
+                //Aqui guardamos los enlaces en un ArrayList<String>
                 enlaces.add(llave.findElement(By.tagName("a")).getAttribute("href"));
             }
         }
 
         //Lista de enlaces entera
-
         for (String enlace : enlaces) {
 
+            //Aqui hago el get de la pagina y cojo las lalves
             driver.get(enlace);
 
-            List<WebElement> open = driver.findElements(By.className("hckkjjaygnpigevrdrtrhsjmbq"));
+            //Aqui pillo las cajas que puedo abrir
+            List<WebElement> open = driver.findElements(By.className("xseevcrudfovttyttcsdkoichp"));
+            
+            //Aqui pillo el nombre de las cajas
+            WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
 
+            //Aqui imprimimos las cajas 
+            String nombrellave = nombre.getText();
+            System.out.println("Nombre de la llave: " + nombrellave);
+            
+            //Bucle para cojer las cajas que se pueden abrir con las llaves 
             for (WebElement key : open) {
-                WebElement nombrellave = key.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
-                //WebElement cajaQuePuedoAbrir = key.findElement(By.className("gjfbsoxponfqzxefoptgccblwn"));
 
-                System.out.println("Nombre de la llave: " + nombrellave.getText());
-                //System.out.println("La caja que puedes abrir: " + cajaQuePuedoAbrir.getText());
+                WebElement cajaQuePuedoAbrir = key.findElement(By.className("gjfbsoxponfqzxefoptgccblwn"));
+
+                System.out.println("La caja que puedes abrir: " + cajaQuePuedoAbrir.getText());
             }
             System.out.println("______________________");
         }
         driver.quit();
 
     }
+
+    public void sacarCajas() throws InterruptedException {
+        FirefoxOptions options = new FirefoxOptions();
+        WebDriver driver = new FirefoxDriver(options);
+
+        driver.get("https://wiki.cs.money/cases");
+
+        List<WebElement> filasCajas = driver.findElements(By.className("gasovxczmdwrpzliptyovkjrjp"));
+
+        ArrayList<String> listaDeEnlaces = new ArrayList<String>();
+
+        for (WebElement fila : filasCajas) {
+
+            List<WebElement> cajas = fila.findElements(By.className("kxmatkcipwonxvwweiqqdoumxg"));
+
+            for (WebElement caja : cajas) {
+                listaDeEnlaces.add(caja.findElement(By.tagName("a")).getAttribute("href"));
+            }
+        }
+
+        //Lista de los enclaces
+
+        for (String enlace : listaDeEnlaces) {
+
+            driver.get(enlace);
+
+            List<WebElement> nom_caja = driver.findElements(By.className("nkopffnytutyfkoqnmlpzbnzrj"));
+
+            for (WebElement rarity : nom_caja) {
+
+                WebElement nombre_caja = rarity.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
+                System.out.println("El nombre de la caja es: " + nombre_caja.getText());
+            }
+        }
+        driver.quit();
+    }
+    public void scarSkins() throws InterruptedException {
+        FirefoxOptions options = new FirefoxOptions();
+        WebDriver driver = new FirefoxDriver(options);
+
+        driver.get("https://wiki.cs.money/cases");
+
+        List<WebElement> filasCajas = driver.findElements(By.className("gasovxczmdwrpzliptyovkjrjp"));
+
+        ArrayList<String> listaDeEnlaces = new ArrayList<String>();
+
+        for (WebElement fila : filasCajas) {
+
+            List<WebElement> cajas = fila.findElements(By.className("kxmatkcipwonxvwweiqqdoumxg"));
+
+            for (WebElement caja : cajas) {
+                listaDeEnlaces.add(caja.findElement(By.tagName("a")).getAttribute("href"));
+            }
+        }
+
+        //Lista de los enclaces
+
+        for (String enlace : listaDeEnlaces) {
+
+            driver.get(enlace);
+
+            List<WebElement> skins = driver.findElements(By.className("nbilqzbwqcjqxplbkrncabwrdm"));
+            WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
+
+            String nombreCaja = nombre.getText();
+            System.out.println("Nombre de la caja: " + nombreCaja);
+
+            for (WebElement rarity : skins) {
+                WebElement skinsss = rarity.findElement(By.className("qhtfthruqdavchytohzxezhrsq"));
+                System.out.println("Skins : " + skinsss.getText());
+            }
+            System.out.println("______________________");
+        }
+        driver.quit();
+    }
 }
-
-/*
-List<WebElement> keys = driver.findElements(By.className("nmkpyzbxbnvwcxlxzdoiftdmpj"));
-
-        ArrayList<String> todoslosenlaces = new ArrayList<>();
-
-        for (WebElement llave : keys) {
-            //
-            List<WebElement> llaves = driver.findElements(By.className("dshqqaonthvvsarqtrbbrgjvvb"));
-
-            for (WebElement klk : llaves) {
-                todoslosenlaces.add(klk.findElement(By.tagName("a")).getAttribute("href"));
-            }
-
-        }
-
-        for (String todos : todoslosenlaces) {
-
-            driver.get(todos);
-
-            List<WebElement> llve = driver.findElements(By.className("wiigrmhqvyvyncniatqresceen"));
-            for (WebElement hola : llve) {
-                WebElement tutia = hola.findElement(By.className("kxmatkcipwonxvwweiqqdoumxg"));
-                System.out.println(tutia.getText());
-            }
-
-
-        }
- */
