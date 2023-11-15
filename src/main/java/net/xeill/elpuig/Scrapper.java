@@ -36,8 +36,6 @@ public class Scrapper{
                 // Guardar los enlaces em un ArrayList<String>
                 listaEnlaces.add(arma.findElement(By.tagName("a")).getAttribute("href"));
             }
-
-
         }
 
         // Lista de enlaces completa
@@ -93,26 +91,32 @@ public class Scrapper{
             driver.get(enlace);
 
             //Aqui pillo las cajas que puedo abrir
-            List<WebElement> open = driver.findElements(By.className("xseevcrudfovttyttcsdkoichp"));
-            
+            List<WebElement> open = driver.findElements(By.className("uahaobodgycugfmkhrqpjvevkh"));
+
             //Aqui pillo el nombre de las cajas
             WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
 
-            //Aqui imprimimos las cajas 
+            //Aqui pillo el precio de la llave
+            WebElement precio = driver.findElement(By.className("bthixlgmwxbzrkuwifzzyvnpey"));
+
+            //Aqui imprimimos el nombre de las llaves
             String nombrellave = nombre.getText();
             System.out.println("Nombre de la llave: " + nombrellave);
-            
-            //Bucle para cojer las cajas que se pueden abrir con las llaves 
+
+            //Aqui imprimimos el precio de las llaves
+            String preciollave = precio.getText();
+            System.out.println("El precio de la llave es de : " + preciollave);
+
+            //Bucle para cojer las cajas que se pueden abrir con las llaves
             for (WebElement key : open) {
 
                 WebElement cajaQuePuedoAbrir = key.findElement(By.className("gjfbsoxponfqzxefoptgccblwn"));
 
-                System.out.println("La caja que puedes abrir: " + cajaQuePuedoAbrir.getText());
+                System.out.println("El nombre de la caja que se puede abrir con esta llave: " + cajaQuePuedoAbrir.getText());
             }
             System.out.println("______________________");
         }
         driver.quit();
-
     }
 
     public void sacarCajas() throws InterruptedException {
@@ -150,6 +154,7 @@ public class Scrapper{
         }
         driver.quit();
     }
+
     public void scarSkins() throws InterruptedException {
         FirefoxOptions options = new FirefoxOptions();
         WebDriver driver = new FirefoxDriver(options);
