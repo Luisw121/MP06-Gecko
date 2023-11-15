@@ -31,6 +31,22 @@ public class Main {
                         e.printStackTrace();
                     }
                         break;
+                case 3:
+                    try {
+                        Scrapper scrapper = new Scrapper();
+
+                    }catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                        break;
+                case 4:
+                    try {
+                        Scrapper scrapper = new Scrapper();
+
+                    }catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    break;
 
             }
         }
