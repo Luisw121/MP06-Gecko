@@ -8,13 +8,12 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 import java.util.ArrayList;
 import java.util.List;
-
 public class Scrapper{
 
     public Scrapper() throws InterruptedException {
         System.out.println(System.getenv("PATH"));
         System.out.println(System.getenv("HOME"));
-        //test
+
         System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver");
     }
 
@@ -67,6 +66,42 @@ public class Scrapper{
         driver.quit();
     }
     public void sacarllaves() throws InterruptedException {
+        FirefoxOptions options = new FirefoxOptions();
+        WebDriver driver = new FirefoxDriver(options);
+
+        driver.get("https://wiki.cs.money/keys");
+
+        List<WebElement> filaDeLlaves = driver.findElements(By.className("nbilqzbwqcjqxplbkrncabwrdm"));
+
+        ArrayList<String> enlaces = new ArrayList<>();
+
+        for (WebElement fila : filaDeLlaves) {
+
+            List<WebElement> llaves = fila.findElements(By.className("kxmatkcipwonxvwweiqqdoumxg"));
+            for (WebElement llave : llaves) {
+
+                enlaces.add(llave.findElement(By.tagName("a")).getAttribute("href"));
+            }
+        }
+
+        //Lista de enlaces entera
+
+        for (String enlace : enlaces) {
+
+            driver.get(enlace);
+
+            List<WebElement> open = driver.findElements(By.className("hckkjjaygnpigevrdrtrhsjmbq"));
+
+            for (WebElement key : open) {
+                WebElement nombrellave = key.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
+                //WebElement cajaQuePuedoAbrir = key.findElement(By.className("gjfbsoxponfqzxefoptgccblwn"));
+
+                System.out.println("Nombre de la llave: " + nombrellave.getText());
+                //System.out.println("La caja que puedes abrir: " + cajaQuePuedoAbrir.getText());
+            }
+            System.out.println("______________________");
+        }
+        driver.quit();
 
     }
 }
