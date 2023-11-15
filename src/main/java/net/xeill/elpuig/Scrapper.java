@@ -14,7 +14,7 @@ public class Scrapper{
     public Scrapper() throws InterruptedException {
         System.out.println(System.getenv("PATH"));
         System.out.println(System.getenv("HOME"));
-
+        //test
         System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver");
     }
 
