@@ -56,10 +56,10 @@ public class Scrapper{
                 for (WebElement stat: stats) {
                     WebElement estats = stat.findElement(By.className("coybuydtexahpqmeiusrucdvqy"));
                     WebElement numeros = stat.findElement(By.className("jykqpwpklhfwmblgijelpcvbzy"));
-                    estadisticas.append(estats.getText()).append(" ").append(numeros.getText()).append(", ");
+                    estadisticas.append("Estadisticas: " + estats.getText()).append(" ").append(numeros.getText()).append(", ");
                 }
                 //ahora escribimos en el archivo CSV
-                csvWriter.append(nombreArma).append(",").append(estadisticas.toString()).append("\n");
+                csvWriter.append("Nombre de la arma: " + nombreArma).append(", ").append(estadisticas.toString()).append("\n");
 
                 System.out.println("Imprimiendo en datos_armas.csv");
             }
@@ -89,40 +89,52 @@ public class Scrapper{
                 enlaces.add(llave.findElement(By.tagName("a")).getAttribute("href"));
             }
         }
+        String archivocsv2 = "datos_llaves.csv";
+        try(FileWriter csvWriter = new FileWriter(archivocsv2)) {
+            //Lista de enlaces entera
+            for (String enlace : enlaces) {
 
-        //Lista de enlaces entera
-        for (String enlace : enlaces) {
+                //Aqui hago el get de la pagina y cojo las lalves
+                driver.get(enlace);
 
-            //Aqui hago el get de la pagina y cojo las lalves
-            driver.get(enlace);
+                //Aqui pillo las cajas que puedo abrir
+                List<WebElement> open = driver.findElements(By.className("uahaobodgycugfmkhrqpjvevkh"));
 
-            //Aqui pillo las cajas que puedo abrir
-            List<WebElement> open = driver.findElements(By.className("uahaobodgycugfmkhrqpjvevkh"));
+                //Aqui pillo el nombre de las cajas
+                WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
 
-            //Aqui pillo el nombre de las cajas
-            WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
+                //Aqui pillo el precio de la llave
+                WebElement precio = driver.findElement(By.className("bthixlgmwxbzrkuwifzzyvnpey"));
 
-            //Aqui pillo el precio de la llave
-            WebElement precio = driver.findElement(By.className("bthixlgmwxbzrkuwifzzyvnpey"));
+                //Aqui imprimimos el nombre de las llaves
+                String nombrellave = nombre.getText();
+                System.out.println("Nombre de la llave: " + nombrellave);
 
-            //Aqui imprimimos el nombre de las llaves
-            String nombrellave = nombre.getText();
-            System.out.println("Nombre de la llave: " + nombrellave);
+                //Aqui imprimimos el precio de las llaves
+                String preciollave = precio.getText();
+                System.out.println("El precio de la llave es de : " + preciollave);
 
-            //Aqui imprimimos el precio de las llaves
-            String preciollave = precio.getText();
-            System.out.println("El precio de la llave es de : " + preciollave);
+                //String para guardar todas las estadisticas
+                StringBuilder estadisticas = new StringBuilder();
+                //Bucle para cojer las cajas que se pueden abrir con las llaves
+                for (WebElement key : open) {
 
-            //Bucle para cojer las cajas que se pueden abrir con las llaves
-            for (WebElement key : open) {
+                    WebElement cajaQuePuedoAbrir = key.findElement(By.className("jbpjkjachbxfigkusfwkkdcznu"));
 
-                WebElement cajaQuePuedoAbrir = key.findElement(By.className("jbpjkjachbxfigkusfwkkdcznu"));
-                
-                System.out.println("Ahora vemos las cajas que podemos abrir con esta llave: ");
-                System.out.println(cajaQuePuedoAbrir.getText());
+
+                   estadisticas.append("Cajas que puedo abrir con esta llave: " + cajaQuePuedoAbrir.getText()).append(" ").append(", ");
+                }
+                csvWriter.append("Nombre de la llave: " + nombrellave).append(", ").append("Precio de la llave: " + preciollave).append(", ").append(estadisticas.toString()).append("\n");
+
+                System.out.println("Imprimiendo en datos_llaves.csv");
             }
-            System.out.println("______________________");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally {
+            driver.quit();
         }
+
+
         driver.quit();
     }
 
