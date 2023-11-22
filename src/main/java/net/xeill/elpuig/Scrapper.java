@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 public class Scrapper{
@@ -37,31 +39,35 @@ public class Scrapper{
                 listaEnlaces.add(arma.findElement(By.tagName("a")).getAttribute("href"));
             }
         }
+        //Creamos un archivo csv
+        String archivocsv1 = "datos_armas.csv";
+        try (FileWriter csvWriter = new FileWriter(archivocsv1)) {
 
-        // Lista de enlaces completa
+            //ahora creamos bucle para recorrer todos los enlaces y obtnerer las estadisticas
+            for (String enlace : listaEnlaces) {
+                driver.get(enlace);
+                List<WebElement> stats = driver.findElements(By.className("oenizlvgmxdjluppuqjqdwtwng"));
+                WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
+                String nombreArma = nombre.getText();
 
-        for (String enlace : listaEnlaces) {
+                //en este string guardaremos todas las estadisticas
+                StringBuilder estadisticas = new StringBuilder();
 
-            // Hago el get de la página y cojo las estadísticas
-            driver.get(enlace);
-            //Aqui pillo las estats de las armas
-            List<WebElement> stats = driver.findElements(By.className("oenizlvgmxdjluppuqjqdwtwng"));
-            WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
+                for (WebElement stat: stats) {
+                    WebElement estats = stat.findElement(By.className("coybuydtexahpqmeiusrucdvqy"));
+                    WebElement numeros = stat.findElement(By.className("jykqpwpklhfwmblgijelpcvbzy"));
+                    estadisticas.append(estats.getText()).append(" ").append(numeros.getText()).append(", ");
+                }
+                //ahora escribimos en el archivo CSV
+                csvWriter.append(nombreArma).append(",").append(estadisticas.toString()).append("\n");
 
-            //Aqui pillo el nombre de las armas y las imprimo
-            String nombreArma = nombre.getText();
-            System.out.println(nombreArma);
-
-            //Bucle para pillar todas el nombre de las estats con los numeros(valores) y lo imprimo
-            for (WebElement stat : stats) {
-                //WebElement sts = driver.findElement(By.className("hxtzmvitxocobaxesbucdwkqrv"));
-                WebElement estats = stat.findElement(By.className("coybuydtexahpqmeiusrucdvqy"));
-                WebElement numeros = stat.findElement(By.className("jykqpwpklhfwmblgijelpcvbzy"));
-                System.out.println(estats.getText() + " " + numeros.getText());
+                System.out.println("Imprimiendo en datos_armas.csv");
             }
-            System.out.println("______________________");
+        }catch (IOException e){
+            e.printStackTrace();
+        }finally {
+            driver.quit();
         }
-        driver.quit();
     }
 
     public void sacarllaves() throws InterruptedException {
@@ -110,9 +116,10 @@ public class Scrapper{
             //Bucle para cojer las cajas que se pueden abrir con las llaves
             for (WebElement key : open) {
 
-                WebElement cajaQuePuedoAbrir = key.findElement(By.className("gjfbsoxponfqzxefoptgccblwn"));
-
-                System.out.println("El nombre de la caja que se puede abrir con esta llave: " + cajaQuePuedoAbrir.getText());
+                WebElement cajaQuePuedoAbrir = key.findElement(By.className("jbpjkjachbxfigkusfwkkdcznu"));
+                
+                System.out.println("Ahora vemos las cajas que podemos abrir con esta llave: ");
+                System.out.println(cajaQuePuedoAbrir.getText());
             }
             System.out.println("______________________");
         }
@@ -180,15 +187,17 @@ public class Scrapper{
 
             driver.get(enlace);
 
-            List<WebElement> skins = driver.findElements(By.className("nbilqzbwqcjqxplbkrncabwrdm"));
+            List<WebElement> skins = driver.findElements(By.className("uahaobodgycugfmkhrqpjvevkh"));
             WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
 
             String nombreCaja = nombre.getText();
+            System.out.println("_______________________");
             System.out.println("Nombre de la caja: " + nombreCaja);
 
             for (WebElement rarity : skins) {
-                WebElement skinsss = rarity.findElement(By.className("qhtfthruqdavchytohzxezhrsq"));
-                System.out.println("Skins : " + skinsss.getText());
+                WebElement skinsss = rarity.findElement(By.className("gasovxczmdwrpzliptyovkjrjp"));
+                System.out.println(skinsss.getText());
+
             }
             System.out.println("______________________");
         }
