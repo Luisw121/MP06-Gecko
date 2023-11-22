@@ -133,9 +133,6 @@ public class Scrapper{
         }finally {
             driver.quit();
         }
-
-
-        driver.quit();
     }
 
     public void sacarCajas() throws InterruptedException {
@@ -157,21 +154,33 @@ public class Scrapper{
             }
         }
 
-        //Lista de los enclaces
+        //String del archivo CSV
+        String archivocsv3 = "nombre_cajas.csv";
 
-        for (String enlace : listaDeEnlaces) {
+        try (FileWriter csvWriter = new FileWriter(archivocsv3)) {
 
-            driver.get(enlace);
+            for (String enlace : listaDeEnlaces) {
 
-            List<WebElement> nom_caja = driver.findElements(By.className("nkopffnytutyfkoqnmlpzbnzrj"));
+                driver.get(enlace);
 
-            for (WebElement rarity : nom_caja) {
+                List<WebElement> nom_caja = driver.findElements(By.className("nkopffnytutyfkoqnmlpzbnzrj"));
 
-                WebElement nombre_caja = rarity.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
-                System.out.println("El nombre de la caja es: " + nombre_caja.getText());
+                //String para guardar todas las estadisticas
+                StringBuilder nombrecaja = new StringBuilder();
+                for (WebElement rarity : nom_caja) {
+
+                    WebElement nombre_caja = rarity.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
+                    nombrecaja.append("Nombre de la caja: " + nombre_caja.getText()).append(" ");
+                }
+                csvWriter.append(nombrecaja.toString()).append("\n");
+
+                System.out.println("Imprimiendo en nombre_cajas.csv");
             }
+        }catch (IOException e) {
+            e.printStackTrace();
+        }finally {
+            driver.quit();
         }
-        driver.quit();
     }
 
     public void scarSkins() throws InterruptedException {
