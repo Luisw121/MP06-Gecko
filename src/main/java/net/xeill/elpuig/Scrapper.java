@@ -202,26 +202,35 @@ public class Scrapper{
             }
         }
 
-        //Lista de los enclaces
+        String archivocsv4 = "datos_skins.csv";
 
-        for (String enlace : listaDeEnlaces) {
+        try (FileWriter csvWriter = new FileWriter(archivocsv4)) {
+            for (String enlace : listaDeEnlaces) {
 
-            driver.get(enlace);
+                driver.get(enlace);
 
-            List<WebElement> skins = driver.findElements(By.className("uahaobodgycugfmkhrqpjvevkh"));
-            WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
+                List<WebElement> skins = driver.findElements(By.className("uahaobodgycugfmkhrqpjvevkh"));
+                WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
 
-            String nombreCaja = nombre.getText();
-            System.out.println("_______________________");
-            System.out.println("Nombre de la caja: " + nombreCaja);
+                String nombreCaja = nombre.getText();
+                System.out.println("_______________________");
+                System.out.println("Nombre de la caja: " + nombreCaja);
 
-            for (WebElement rarity : skins) {
-                WebElement skinsss = rarity.findElement(By.className("gasovxczmdwrpzliptyovkjrjp"));
-                System.out.println(skinsss.getText());
+                StringBuilder skinsarmas = new StringBuilder();
+                for (WebElement rarity : skins) {
+                    WebElement skinsss = rarity.findElement(By.className("gasovxczmdwrpzliptyovkjrjp"));
+                    System.out.println(skinsss.getText());
+                    skinsarmas.append(skinsss.getText()).append(" ");
 
+                }
+                csvWriter.append(skinsarmas.toString()).append("\n");
+
+                System.out.println("Imprimiendo en datos_skins.csv");
             }
-            System.out.println("______________________");
+        }catch (IOException e) {
+            e.printStackTrace();
+        }finally {
+            driver.quit();
         }
-        driver.quit();
     }
 }
