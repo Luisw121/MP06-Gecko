@@ -103,7 +103,11 @@ public class Scrapper{
             }
         }
         String archivocsv2 = "datos_llaves.csv";
-        try(FileWriter csvWriter = new FileWriter(archivocsv2)) {
+        try (CSVWriter csvWriter = new CSVWriter(new FileWriter(archivocsv2))) {
+            //array
+            String[] datos = {"Nombre de las llaves ", "Precio", "Cajas que puedo abrir"};
+            csvWriter.writeNext(datos);
+
             //Lista de enlaces entera
             for (String enlace : enlaces) {
 
@@ -121,29 +125,35 @@ public class Scrapper{
 
                 //Aqui imprimimos el nombre de las llaves
                 String nombrellave = nombre.getText();
-                System.out.println("Nombre de la llave: " + nombrellave);
 
                 //Aqui imprimimos el precio de las llaves
                 String preciollave = precio.getText();
-                System.out.println("El precio de la llave es de : " + preciollave);
 
                 //String para guardar todas las estadisticas
                 StringBuilder estadisticas = new StringBuilder();
+
+                String[] array = new String[3];
+
+                array[0] = nombrellave;
+                array[1] = preciollave;
+
+                int i = 2;
                 //Bucle para cojer las cajas que se pueden abrir con las llaves
                 for (WebElement key : open) {
 
                     WebElement cajaQuePuedoAbrir = key.findElement(By.className("jbpjkjachbxfigkusfwkkdcznu"));
 
 
-                   estadisticas.append("Cajas que puedo abrir con esta llave: " + cajaQuePuedoAbrir.getText()).append(" ").append(", ");
+                    array[i] = cajaQuePuedoAbrir.getText();
+                    i++;
                 }
-                csvWriter.append("Nombre de la llave: " + nombrellave).append(", ").append("Precio de la llave: " + preciollave).append(", ").append(estadisticas.toString()).append("\n");
+                csvWriter.writeNext(array);
 
                 System.out.println("Imprimiendo en datos_llaves.csv");
             }
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             driver.quit();
         }
     }
