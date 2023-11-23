@@ -41,7 +41,11 @@ public class Scrapper{
         }
         //Creamos un archivo csv
         String archivocsv1 = "datos_armas.csv";
-        try (FileWriter csvWriter = new FileWriter(archivocsv1)) {
+
+        try (CSVWriter csvWriter = new CSVWriter(new FileWriter(archivocsv1))) {
+            //Creamos array que luego se escribira en el csv
+            String[] hello = {"Nombre del arma", "Damage LMB", "Damage RMB", "Kill Award", "Running Speed", "Side"};
+            csvWriter.writeNext(hello);
 
             //ahora creamos bucle para recorrer todos los enlaces y obtnerer las estadisticas
             for (String enlace : listaEnlaces) {
@@ -51,15 +55,24 @@ public class Scrapper{
                 String nombreArma = nombre.getText();
 
                 //en este string guardaremos todas las estadisticas
-                StringBuilder estadisticas = new StringBuilder();
+                //StringBuilder estadisticas = new StringBuilder();
+                String[] datosArmaArray = new String[6];
 
+                datosArmaArray[0] = nombreArma;
+
+                int i = 1;
                 for (WebElement stat: stats) {
                     WebElement estats = stat.findElement(By.className("coybuydtexahpqmeiusrucdvqy"));
                     WebElement numeros = stat.findElement(By.className("jykqpwpklhfwmblgijelpcvbzy"));
-                    estadisticas.append("Estadisticas: " + estats.getText()).append(" ").append(numeros.getText()).append(", ");
+                    //estadisticas.append("Estadisticas: " + estats.getText()).append(" ").append(numeros.getText()).append(", ");
+
+                    // if estats == "DAMAGE LBR" --> lo meto en la posicion X
+
+                    datosArmaArray[i] = numeros.getText();
+                    i++;
                 }
                 //ahora escribimos en el archivo CSV
-                csvWriter.append("Nombre de la arma: " + nombreArma).append(", ").append(estadisticas.toString()).append("\n");
+                csvWriter.writeNext(datosArmaArray);
 
                 System.out.println("Imprimiendo en datos_armas.csv");
             }
