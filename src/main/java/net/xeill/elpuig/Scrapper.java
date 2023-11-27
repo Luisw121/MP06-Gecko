@@ -1,5 +1,6 @@
 package net.xeill.elpuig;
 
+import com.opencsv.CSVWriter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,7 +11,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-public class Scrapper{
+public class Scrapper {
 
     public Scrapper() throws InterruptedException {
         System.out.println(System.getenv("PATH"));
@@ -61,7 +62,7 @@ public class Scrapper{
                 datosArmaArray[0] = nombreArma;
 
                 int i = 1;
-                for (WebElement stat: stats) {
+                for (WebElement stat : stats) {
                     WebElement estats = stat.findElement(By.className("coybuydtexahpqmeiusrucdvqy"));
                     WebElement numeros = stat.findElement(By.className("jykqpwpklhfwmblgijelpcvbzy"));
                     //estadisticas.append("Estadisticas: " + estats.getText()).append(" ").append(numeros.getText()).append(", ");
@@ -76,9 +77,9 @@ public class Scrapper{
 
                 System.out.println("Imprimiendo en datos_armas.csv");
             }
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             driver.quit();
         }
     }
@@ -180,7 +181,10 @@ public class Scrapper{
         //String del archivo CSV
         String archivocsv3 = "nombre_cajas.csv";
 
-        try (FileWriter csvWriter = new FileWriter(archivocsv3)) {
+        try (CSVWriter csvWriter = new CSVWriter(new FileWriter(archivocsv3))) {
+            //array
+            String[] array = {"Nombre de la caja"};
+            csvWriter.writeNext(array);
 
             for (String enlace : listaDeEnlaces) {
 
@@ -193,15 +197,15 @@ public class Scrapper{
                 for (WebElement rarity : nom_caja) {
 
                     WebElement nombre_caja = rarity.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
-                    nombrecaja.append("Nombre de la caja: " + nombre_caja.getText()).append(" ");
+                    nombrecaja.append(nombre_caja.getText());
                 }
-                csvWriter.append(nombrecaja.toString()).append("\n");
+                csvWriter.writeNext(new String[]{nombrecaja.toString()});
 
                 System.out.println("Imprimiendo en nombre_cajas.csv");
             }
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             driver.quit();
         }
     }

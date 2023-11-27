@@ -17,20 +17,21 @@ public class Main {
             switch (V) {
                 case 1:
                     try {
-                    Scrapper scrapper = new Scrapper();
-                    scrapper.sacarStatsArmas();
-                }catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                        Scrapper scrapper = new Scrapper();
+                        scrapper.sacarStatsArmas();
+                    }catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     break;
                 case 2:
                     try {
                         Scrapper scrapper = new Scrapper();
                         scrapper.sacarllaves();
+
                     }catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                        break;
+                    break;
                 case 3:
                     try {
                         Scrapper scrapper = new Scrapper();
@@ -38,7 +39,7 @@ public class Main {
                     }catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                        break;
+                    break;
                 case 4:
                     try {
                         Scrapper scrapper = new Scrapper();
