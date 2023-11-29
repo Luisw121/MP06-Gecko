@@ -7,10 +7,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 public class Scrapper {
 
     public Scrapper() throws InterruptedException {
@@ -26,7 +37,7 @@ public class Scrapper {
 
         driver.get("https://wiki.cs.money/");
 
-        List<WebElement> filasDeArmas = driver.findElements(By.className("cjhhjgtyxaptnnnlzzbcznjjpt"));
+        List<WebElement> filasDeArmas = driver.findElements(By.className("yubwxbvslulbauytxdhyofbyjh"));
 
         ArrayList<String> listaEnlaces = new ArrayList<String>();
 
@@ -51,6 +62,7 @@ public class Scrapper {
             //ahora creamos bucle para recorrer todos los enlaces y obtnerer las estadisticas
             for (String enlace : listaEnlaces) {
                 driver.get(enlace);
+
                 List<WebElement> stats = driver.findElements(By.className("oenizlvgmxdjluppuqjqdwtwng"));
                 WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
                 String nombreArma = nombre.getText();
@@ -58,12 +70,10 @@ public class Scrapper {
                 //en este string guardaremos todas las estadisticas
                 //StringBuilder estadisticas = new StringBuilder();
                 String[] datosArmaArray = new String[6];
-
                 datosArmaArray[0] = nombreArma;
 
                 int i = 1;
                 for (WebElement stat : stats) {
-                    WebElement estats = stat.findElement(By.className("coybuydtexahpqmeiusrucdvqy"));
                     WebElement numeros = stat.findElement(By.className("jykqpwpklhfwmblgijelpcvbzy"));
                     //estadisticas.append("Estadisticas: " + estats.getText()).append(" ").append(numeros.getText()).append(", ");
 
@@ -76,13 +86,65 @@ public class Scrapper {
                 csvWriter.writeNext(datosArmaArray);
 
                 System.out.println("Imprimiendo en datos_armas.csv");
+
             }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
+            generarArchivoXML(listaEnlaces, driver);
             driver.quit();
         }
     }
+
+    public void generarArchivoXML(ArrayList<String> listaEnlaces, WebDriver driver) {
+            DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder documentBuilder;
+
+            try {
+                documentBuilder = documentBuilderFactory.newDocumentBuilder();
+                Document document = documentBuilder.newDocument();
+
+                Element armasElement = document.createElement("armas");
+                document.appendChild(armasElement);
+
+                for (String enlaace : listaEnlaces) {
+                    driver.get(enlaace);
+                    List<WebElement> stats = driver.findElements(By.className("oenizlvgmxdjluppuqjqdwtwng"));
+                    WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
+                    String nombreArma = nombre.getText();
+
+                    Element armaElement  =document.createElement("arma");
+                    armasElement.appendChild(armaElement);
+
+                    Element nombreElement = document.createElement("nombre");
+                    nombreElement.appendChild(document.createTextNode(nombreArma));
+                    armaElement.appendChild(nombreElement);
+
+                    int i = 1;
+                    for (WebElement stat : stats) {
+                        WebElement numeros = stat.findElement(By.className("jykqpwpklhfwmblgijelpcvbzy"));
+                        Element statElement = document.createElement("stat" + i);
+                        statElement.appendChild(document.createTextNode(numeros.getText()));
+                        armaElement.appendChild(statElement);
+                        i++;
+                    }
+                }
+                TransformerFactory transformerFactory = TransformerFactory.newInstance();
+                Transformer transformer = transformerFactory.newTransformer();
+                transformer.setOutputProperty(javax.xml.transform.OutputKeys.INDENT, "yes"); // Habilitar el formato
+                transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2"); // Establecer la cantidad de espacios
+
+                DOMSource source = new DOMSource(document);
+                StreamResult result = new StreamResult(new File("armas.xml"));
+                transformer.transform(source, result);
+
+                System.out.println("Archivo XML generado correctamente.");
+
+            }catch (Exception e) {
+                e.printStackTrace();
+            }
+    }
+
 
     public void sacarllaves() throws InterruptedException {
         FirefoxOptions options = new FirefoxOptions();
