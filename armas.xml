@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<armas>
+  <arma>
+    <nombre>★ Karambit</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ M9 Bayonet</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ Butterfly Knife</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ Talon Knife</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ Skeleton Knife</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ Classic Knife</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ Bayonet</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ Stiletto Knife</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ Ursus Knife</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ Paracord Knife</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ Nomad Knife</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ Survival Knife</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ Huntsman Knife</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ Flip Knife</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ Bowie Knife</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ Falchion Knife</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ Gut Knife</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ Navaja Knife</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>★ Shadow Daggers</nombre>
+    <stat1>34/40</stat1>
+    <stat2>55/65</stat2>
+    <stat3>$1500/$750</stat3>
+    <stat4>250</stat4>
+    <stat5>BOTH</stat5>
+  </arma>
+  <arma>
+    <nombre>AK-47</nombre>
+    <stat1>2.5 SEC</stat1>
+    <stat2>44/34</stat2>
+    <stat3>143/111</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>30/90</stat5>
+    <stat6>$ 2700</stat6>
+    <stat7>22 M</stat7>
+    <stat8>600 SHOTS/MIN</stat8>
+    <stat9>215</stat9>
+    <stat10>TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>AWP</nombre>
+    <stat1>3.7 SEC</stat1>
+    <stat2>143/140</stat2>
+    <stat3>459/448</stat3>
+    <stat4>$100/$50</stat4>
+    <stat5>10/30</stat5>
+    <stat6>$ 4750</stat6>
+    <stat7>69 M</stat7>
+    <stat8>41 SHOTS/MIN</stat8>
+    <stat9>210</stat9>
+    <stat10>BOTH</stat10>
+  </arma>
+  <arma>
+    <nombre>M4A4</nombre>
+    <stat1>3.1 SEC</stat1>
+    <stat2>40/28</stat2>
+    <stat3>131/92</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>30/90</stat5>
+    <stat6>$ 3100</stat6>
+    <stat7>28 M</stat7>
+    <stat8>666 SHOTS/MIN</stat8>
+    <stat9>225</stat9>
+    <stat10>COUNTER-TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>M4A1-S</nombre>
+    <stat1>3.1 SEC</stat1>
+    <stat2>41/28</stat2>
+    <stat3>132/92</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>25/75</stat5>
+    <stat6>$ 2900</stat6>
+    <stat7>28 M</stat7>
+    <stat8>600 SHOTS/MIN</stat8>
+    <stat9>225</stat9>
+    <stat10>COUNTER-TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>AUG</nombre>
+    <stat1>3.8 SEC</stat1>
+    <stat2>35/31</stat2>
+    <stat3>112/100</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>30/90</stat5>
+    <stat6>$ 3300</stat6>
+    <stat7>35 M</stat7>
+    <stat8>666 SHOTS/MIN</stat8>
+    <stat9>220</stat9>
+    <stat10>COUNTER-TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>SG 553</nombre>
+    <stat1>2.8 SEC</stat1>
+    <stat2>120/37</stat2>
+    <stat3>120/37</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>30/90</stat5>
+    <stat6>$ 3000</stat6>
+    <stat7>36 M</stat7>
+    <stat8>666 SHOTS/MIN</stat8>
+    <stat9>210</stat9>
+    <stat10>TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>Galil AR</nombre>
+    <stat1>3 SEC</stat1>
+    <stat2>37/29</stat2>
+    <stat3>120/92</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>35/90</stat5>
+    <stat6>$ 2000</stat6>
+    <stat7>16 M</stat7>
+    <stat8>666 SHOTS/MIN</stat8>
+    <stat9>215</stat9>
+    <stat10>TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>FAMAS</nombre>
+    <stat1>3.3 SEC</stat1>
+    <stat2>37/26</stat2>
+    <stat3>120/100</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>25/90</stat5>
+    <stat6>$ 2250</stat6>
+    <stat7>15 M</stat7>
+    <stat8>666 SHOTS/MIN</stat8>
+    <stat9>220</stat9>
+    <stat10>COUNTER-TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>SSG 08</nombre>
+    <stat1>3.7 SEC</stat1>
+    <stat2>110/93</stat2>
+    <stat3>357/299</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>10/90</stat5>
+    <stat6>$ 1700</stat6>
+    <stat7>47 M</stat7>
+    <stat8>48 SHOTS/MIN</stat8>
+    <stat9>230</stat9>
+    <stat10>BOTH</stat10>
+  </arma>
+  <arma>
+    <nombre>SCAR-20</nombre>
+    <stat1>3.1 SEC</stat1>
+    <stat2>99/82</stat2>
+    <stat3>319/263</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>20/90</stat5>
+    <stat6>$ 5000</stat6>
+    <stat7>66 M</stat7>
+    <stat8>240 SHOTS/MIN</stat8>
+    <stat9>215</stat9>
+    <stat10>COUNTER-TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>G3SG1</nombre>
+    <stat1>4.7 SEC</stat1>
+    <stat2>99/82</stat2>
+    <stat3>319/263</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>20/90</stat5>
+    <stat6>$ 5000</stat6>
+    <stat7>66 M</stat7>
+    <stat8>240 SHOTS/MIN</stat8>
+    <stat9>215</stat9>
+    <stat10>TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>USP-S</nombre>
+    <stat1>2.2 SEC</stat1>
+    <stat2>43/22</stat2>
+    <stat3>140/70</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>12/24</stat5>
+    <stat6>$ 200</stat6>
+    <stat7>21 M</stat7>
+    <stat8>352 SHOTS/MIN</stat8>
+    <stat9>240</stat9>
+    <stat10>COUNTER-TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>Glock-18</nombre>
+    <stat1>2.2 SEC</stat1>
+    <stat2>37/17</stat2>
+    <stat3>118/55</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>20/120</stat5>
+    <stat6>$ 200</stat6>
+    <stat7>20 M</stat7>
+    <stat8>400 SHOTS/MIN</stat8>
+    <stat9>240</stat9>
+    <stat10>TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>Desert Eagle</nombre>
+    <stat1>2.2 SEC</stat1>
+    <stat2>77/72</stat2>
+    <stat3>249/232</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>7/35</stat5>
+    <stat6>$ 700</stat6>
+    <stat7>25 M</stat7>
+    <stat8>267 SHOTS/MIN</stat8>
+    <stat9>230</stat9>
+    <stat10>BOTH</stat10>
+  </arma>
+  <arma>
+    <nombre>P250</nombre>
+    <stat1>2.2 SEC</stat1>
+    <stat2>47/30</stat2>
+    <stat3>151/96</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>13/26</stat5>
+    <stat6>$ 300</stat6>
+    <stat7>14 M</stat7>
+    <stat8>400 SHOTS/MIN</stat8>
+    <stat9>240</stat9>
+    <stat10>BOTH</stat10>
+  </arma>
+  <arma>
+    <nombre>Five-SeveN</nombre>
+    <stat1>2.2 SEC</stat1>
+    <stat2>39/35</stat2>
+    <stat3>126/115</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>20/100</stat5>
+    <stat6>$ 500</stat6>
+    <stat7>14 M</stat7>
+    <stat8>400 SHOTS/MIN</stat8>
+    <stat9>240</stat9>
+    <stat10>COUNTER-TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>CZ75-Auto</nombre>
+    <stat1>2.7 SEC</stat1>
+    <stat2>38/29</stat2>
+    <stat3>123/95</stat3>
+    <stat4>$100/$50</stat4>
+    <stat5>12/12</stat5>
+    <stat6>$ 500</stat6>
+    <stat7>11 M</stat7>
+    <stat8>600 SHOTS/MIN</stat8>
+    <stat9>240</stat9>
+    <stat10>BOTH</stat10>
+  </arma>
+  <arma>
+    <nombre>P2000</nombre>
+    <stat1>2.2 SEC</stat1>
+    <stat2>43/22</stat2>
+    <stat3>140/70</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>13/52</stat5>
+    <stat6>$ 200</stat6>
+    <stat7>22 M</stat7>
+    <stat8>352 SHOTS/MIN</stat8>
+    <stat9>240</stat9>
+    <stat10>COUNTER-TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>Tec-9</nombre>
+    <stat1>2.5 SEC</stat1>
+    <stat2>41/37</stat2>
+    <stat3>130/118</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>18/90</stat5>
+    <stat6>$ 500</stat6>
+    <stat7>13 M</stat7>
+    <stat8>500 SHOTS/MIN</stat8>
+    <stat9>240</stat9>
+    <stat10>TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>R8 Revolver</nombre>
+    <stat1>2.3 SEC</stat1>
+    <stat2>107/99</stat2>
+    <stat3>342/319</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>8/8</stat5>
+    <stat6>$ 600</stat6>
+    <stat7>25 M</stat7>
+    <stat8>600 SHOTS/MIN</stat8>
+    <stat9>85</stat9>
+    <stat10>BOTH</stat10>
+  </arma>
+  <arma>
+    <nombre>Dual Berettas</nombre>
+    <stat1>3.8 SEC</stat1>
+    <stat2>47/27</stat2>
+    <stat3>152/86</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>30/120</stat5>
+    <stat6>$ 400</stat6>
+    <stat7>17 M</stat7>
+    <stat8>500 SHOTS/MIN</stat8>
+    <stat9>240</stat9>
+    <stat10>BOTH</stat10>
+  </arma>
+  <arma>
+    <nombre>P90</nombre>
+    <stat1>3.3 SEC</stat1>
+    <stat2>32/22</stat2>
+    <stat3>103/71</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>50/100</stat5>
+    <stat6>$ 2350</stat6>
+    <stat7>10 M</stat7>
+    <stat8>857 SHOTS/MIN</stat8>
+    <stat9>230</stat9>
+    <stat10>BOTH</stat10>
+  </arma>
+  <arma>
+    <nombre>UMP-45</nombre>
+    <stat1>3.5 SEC</stat1>
+    <stat2>43/28</stat2>
+    <stat3>140/90</stat3>
+    <stat4>$600/$300</stat4>
+    <stat5>25/100</stat5>
+    <stat6>$ 1200</stat6>
+    <stat7>11 M</stat7>
+    <stat8>666 SHOTS/MIN</stat8>
+    <stat9>230</stat9>
+    <stat10>BOTH</stat10>
+  </arma>
+  <arma>
+    <nombre>MAC-10</nombre>
+    <stat1>2.6 SEC</stat1>
+    <stat2>35/20</stat2>
+    <stat3>114/65</stat3>
+    <stat4>$600/$300</stat4>
+    <stat5>30/100</stat5>
+    <stat6>$ 1050</stat6>
+    <stat7>11 M</stat7>
+    <stat8>800 SHOTS/MIN</stat8>
+    <stat9>240</stat9>
+    <stat10>TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>MP7</nombre>
+    <stat1>3.1 SEC</stat1>
+    <stat2>35/22</stat2>
+    <stat3>115/71</stat3>
+    <stat4>$600/$300</stat4>
+    <stat5>30/120</stat5>
+    <stat6>$ 1500</stat6>
+    <stat7>14 M</stat7>
+    <stat8>750 SHOTS/MIN</stat8>
+    <stat9>220</stat9>
+    <stat10>BOTH</stat10>
+  </arma>
+  <arma>
+    <nombre>MP9</nombre>
+    <stat1>2.1 SEC</stat1>
+    <stat2>32/19</stat2>
+    <stat3>104/61</stat3>
+    <stat4>$600/$300</stat4>
+    <stat5>30/120</stat5>
+    <stat6>$ 1250</stat6>
+    <stat7>16 M</stat7>
+    <stat8>857 SHOTS/MIN</stat8>
+    <stat9>240</stat9>
+    <stat10>COUNTER-TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>MP5-SD</nombre>
+    <stat1>2.97 SEC</stat1>
+    <stat2>33/20</stat2>
+    <stat3>107/66</stat3>
+    <stat4>$600/$300</stat4>
+    <stat5>30/120</stat5>
+    <stat6>$ 1500</stat6>
+    <stat7>15 M</stat7>
+    <stat8>750 SHOTS/MIN</stat8>
+    <stat9>235</stat9>
+    <stat10>BOTH</stat10>
+  </arma>
+  <arma>
+    <nombre>PP-Bizon</nombre>
+    <stat1>2.4 SEC</stat1>
+    <stat2>33/19</stat2>
+    <stat3>108/61</stat3>
+    <stat4>$600/$300</stat4>
+    <stat5>64/120</stat5>
+    <stat6>$ 1400</stat6>
+    <stat7>10 M</stat7>
+    <stat8>750 SHOTS/MIN</stat8>
+    <stat9>240</stat9>
+    <stat10>BOTH</stat10>
+  </arma>
+  <arma>
+    <nombre>Sawed-Off</nombre>
+    <stat1>3.2 SEC</stat1>
+    <stat2>40/30</stat2>
+    <stat3>128/96</stat3>
+    <stat4>$900/$450</stat4>
+    <stat5>7/32</stat5>
+    <stat6>$ 1100</stat6>
+    <stat7>2.2 M</stat7>
+    <stat8>71 SHOTS/MIN</stat8>
+    <stat9>210</stat9>
+    <stat10>TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>MAG-7</nombre>
+    <stat1>2.4 SEC</stat1>
+    <stat2>37/28</stat2>
+    <stat3>120/90</stat3>
+    <stat4>$900/$450</stat4>
+    <stat5>5/32</stat5>
+    <stat6>$ 1300</stat6>
+    <stat7>4.6 M</stat7>
+    <stat8>71 SHOTS/MIN</stat8>
+    <stat9>225</stat9>
+    <stat10>COUNTER-TERRORISTS</stat10>
+  </arma>
+  <arma>
+    <nombre>Nova</nombre>
+    <stat1>3.7 SEC</stat1>
+    <stat2>32/16</stat2>
+    <stat3>106/52</stat3>
+    <stat4>$900/$450</stat4>
+    <stat5>8/32</stat5>
+    <stat6>$ 1050</stat6>
+    <stat7>3.2 M</stat7>
+    <stat8>68 SHOTS/MIN</stat8>
+    <stat9>220</stat9>
+    <stat10>BOTH</stat10>
+  </arma>
+  <arma>
+    <nombre>XM1014</nombre>
+    <stat1>2.8 SEC</stat1>
+    <stat2>25/20</stat2>
+    <stat3>80/64</stat3>
+    <stat4>$900/$450</stat4>
+    <stat5>7/32</stat5>
+    <stat6>$ 2000</stat6>
+    <stat7>3.4 M</stat7>
+    <stat8>171 SHOTS/MIN</stat8>
+    <stat9>215</stat9>
+    <stat10>BOTH</stat10>
+  </arma>
+  <arma>
+    <nombre>Negev</nombre>
+    <stat1>5.7 SEC</stat1>
+    <stat2>43/31</stat2>
+    <stat3>140/99</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>150/300</stat5>
+    <stat6>$ 1700</stat6>
+    <stat7>13 M</stat7>
+    <stat8>800 SHOTS/MIN</stat8>
+    <stat9>150</stat9>
+    <stat10>BOTH</stat10>
+  </arma>
+  <arma>
+    <nombre>M249</nombre>
+    <stat1>5.7 SEC</stat1>
+    <stat2>40/32</stat2>
+    <stat3>128/102</stat3>
+    <stat4>$300/$150</stat4>
+    <stat5>100/200</stat5>
+    <stat6>$ 5200</stat6>
+    <stat7>16 M</stat7>
+    <stat8>750 SHOTS/MIN</stat8>
+    <stat9>195</stat9>
+    <stat10>BOTH</stat10>
+  </arma>
+</armas>
