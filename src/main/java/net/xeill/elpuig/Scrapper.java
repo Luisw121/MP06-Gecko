@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
@@ -250,7 +251,7 @@ public class Scrapper {
             for (String enlace : listaDeEnlaces) {
 
                 driver.get(enlace);
-                //gasovxczmdwrpzliptyovkjrjp
+                //todas las cajas
                 List<WebElement> nom_caja = driver.findElements(By.className("iwxsbgrvudiuruwvxmapevbvcl"));
                 //String para guardar todos los nombres de las cajas
 
@@ -269,10 +270,51 @@ public class Scrapper {
 
                 System.out.println("Imprimiendo en nombre_cajas.csv");
             }
+            generarArchivoXML3(listaDeEnlaces, driver);
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
+
             driver.quit();
+        }
+    }
+
+    public void generarArchivoXML3(ArrayList<String> listaDeEnlaces, WebDriver driver) {
+        DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder documentBuilder;
+
+        try {
+            documentBuilder = documentBuilderFactory.newDocumentBuilder();
+            Document document = documentBuilder.newDocument();
+
+            Element cajaElement = document.createElement("cajas");
+            document.appendChild(cajaElement);
+
+            for (String enlace : listaDeEnlaces) {
+                driver.get(enlace);
+                List<WebElement> nom_caja = driver.findElements(By.className("iwxsbgrvudiuruwvxmapevbvcl"));
+                Element cajasElement = document.createElement("caja");
+                cajaElement.appendChild(cajasElement);
+
+                int i = 1;
+                for (WebElement cajita : nom_caja) {
+                    WebElement nombre_caja = cajita.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
+                    Element nomElement = document.createElement("stat" + i);
+                    nomElement.appendChild(document.createTextNode(nombre_caja.getText()));
+                    cajasElement.appendChild(nomElement);
+                    i++;
+                }
+            }
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = transformerFactory.newTransformer();
+            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+            transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+
+            DOMSource source = new DOMSource(document);
+            StreamResult result = new StreamResult(new File("cajas.xml"));
+            transformer.transform(source, result);
+        }catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
