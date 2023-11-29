@@ -192,15 +192,17 @@ public class Scrapper {
                 List<WebElement> nom_caja = driver.findElements(By.className("iwxsbgrvudiuruwvxmapevbvcl"));
                 //String para guardar todos los nombres de las cajas
 
+                //array par aguardar los nombres de las cajas
                 String[] array3 = new String[2];
 
                 int i = 0;
                 for (WebElement rarity : nom_caja) {
-
+                    //aqui se encuentra el nombre de la caja y la metemos en la array
                     WebElement nombre_caja = rarity.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
                     array3[i] = nombre_caja.getText();
                     i++;
                 }
+                //imprimimos las cajas
                 csvWriter.writeNext(array3);
 
                 System.out.println("Imprimiendo en nombre_cajas.csv");
@@ -231,34 +233,59 @@ public class Scrapper {
             }
         }
 
-        String archivocsv4 = "datos_skins.csv";
+        //String del archivo CSV
+        String archivocsv3 = "datos_skins.csv";
+        try (CSVWriter csvWriter = new CSVWriter(new FileWriter(archivocsv3))) {
+            //array
+            String[] array = {"Nombre de la caja", " Nombre de la skin"};
+            csvWriter.writeNext(array);
 
-        try (FileWriter csvWriter = new FileWriter(archivocsv4)) {
+            //ArrayList<ArrayList<String>> datosSkins = new ArrayList<ArrayList<String>>();
+
+            ArrayList<String[]> datosSkins = new ArrayList<String[]>();
+
             for (String enlace : listaDeEnlaces) {
 
                 driver.get(enlace);
 
-                List<WebElement> skins = driver.findElements(By.className("uahaobodgycugfmkhrqpjvevkh"));
-                WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
+                //para coger el nombre de las cajas
+                List<WebElement> nom_caja = driver.findElements(By.className("iwxsbgrvudiuruwvxmapevbvcl"));
 
-                String nombreCaja = nombre.getText();
-                System.out.println("_______________________");
-                System.out.println("Nombre de la caja: " + nombreCaja);
+                //para coger los nombres de la skins
+                List<WebElement> skinss = driver.findElements(By.className("gasovxczmdwrpzliptyovkjrjp"));
 
-                StringBuilder skinsarmas = new StringBuilder();
-                for (WebElement rarity : skins) {
-                    WebElement skinsss = rarity.findElement(By.className("gasovxczmdwrpzliptyovkjrjp"));
-                    System.out.println(skinsss.getText());
-                    skinsarmas.append(skinsss.getText()).append(" ");
+                //nombre de las cajas
+                WebElement nombre_caja = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
+                String nombre_de_caja = nombre_caja.getText();
+
+
+                for (WebElement rarity : skinss) {
+                    //aquie esta el nombre de la skin
+                    List<WebElement> nombresSkins = rarity.findElements(By.className("szvsuisjrrqalciyqqzoxoaubw"));
+
+                    for (WebElement nombreSkin : nombresSkins) {
+                        //array par aguardar
+                        String[] datoSkin = new String[2];
+                        datoSkin[0] = nombre_de_caja;
+                        datoSkin[1] = nombreSkin.getText();
+
+                        datosSkins.add(datoSkin);
+
+                    }
 
                 }
-                csvWriter.append(skinsarmas.toString()).append("\n");
 
-                System.out.println("Imprimiendo en datos_skins.csv");
             }
-        }catch (IOException e) {
+
+            // Lista de datos completada, escribir línea a línea
+            System.out.println("Imprimiendo en nombre_cajas.csv");
+
+            for (String[] dato : datosSkins) {
+                csvWriter.writeNext(dato);
+            }
+        } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             driver.quit();
         }
     }
