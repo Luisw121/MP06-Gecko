@@ -180,7 +180,6 @@ public class Scrapper {
 
         //String del archivo CSV
         String archivocsv3 = "nombre_cajas.csv";
-
         try (CSVWriter csvWriter = new CSVWriter(new FileWriter(archivocsv3))) {
             //array
             String[] array = {"Nombre de la caja"};
@@ -189,17 +188,20 @@ public class Scrapper {
             for (String enlace : listaDeEnlaces) {
 
                 driver.get(enlace);
+                //gasovxczmdwrpzliptyovkjrjp
+                List<WebElement> nom_caja = driver.findElements(By.className("iwxsbgrvudiuruwvxmapevbvcl"));
+                //String para guardar todos los nombres de las cajas
 
-                List<WebElement> nom_caja = driver.findElements(By.className("nkopffnytutyfkoqnmlpzbnzrj"));
+                String[] array3 = new String[2];
 
-                //String para guardar todas las estadisticas
-                StringBuilder nombrecaja = new StringBuilder();
+                int i = 0;
                 for (WebElement rarity : nom_caja) {
 
                     WebElement nombre_caja = rarity.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
-                    nombrecaja.append(nombre_caja.getText());
+                    array3[i] = nombre_caja.getText();
+                    i++;
                 }
-                csvWriter.writeNext(new String[]{nombrecaja.toString()});
+                csvWriter.writeNext(array3);
 
                 System.out.println("Imprimiendo en nombre_cajas.csv");
             }
