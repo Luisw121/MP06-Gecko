@@ -12,7 +12,7 @@ public class Main {
             System.out.println("1. Ver todas las armas");
             System.out.println("2. Ver todas las llaves");
             System.out.println("3. Ver todas las cajas");
-            System.out.println("4. Ver las skins que te pueden tocar en cada caja");
+            System.out.println("4. Ver las armas que te pueden tocar en cada caja");
             int V = entrada.nextInt();
             switch (V) {
                 case 1:

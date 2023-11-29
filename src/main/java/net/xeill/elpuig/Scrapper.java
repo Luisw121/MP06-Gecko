@@ -106,7 +106,7 @@ public class Scrapper {
         String archivocsv2 = "datos_llaves.csv";
         try (CSVWriter csvWriter = new CSVWriter(new FileWriter(archivocsv2))) {
             //array
-            String[] datos = {"Nombre de las llaves ", "Precio", "Cajas que puedo abrir"};
+            String[] datos = {"Nombre de las llaves ", "Precio de la llave", "Cajas que puedo abrir"};
             csvWriter.writeNext(datos);
 
             //Lista de enlaces entera
@@ -260,7 +260,7 @@ public class Scrapper {
 
 
                 for (WebElement rarity : skinss) {
-                    //aquie esta el nombre de la skin
+                    //aqui esta el nombre de la skin
                     List<WebElement> nombresSkins = rarity.findElements(By.className("szvsuisjrrqalciyqqzoxoaubw"));
 
                     for (WebElement nombreSkin : nombresSkins) {
