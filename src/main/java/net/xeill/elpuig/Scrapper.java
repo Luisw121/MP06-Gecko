@@ -12,6 +12,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
@@ -208,9 +209,71 @@ public class Scrapper {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
+            generarArchivoXML2(enlaces, driver);
             driver.quit();
         }
     }
+    public void generarArchivoXML2(ArrayList<String> enlaces, WebDriver driver) {
+        DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder documentBuilder;
+
+            try {
+                documentBuilder = documentBuilderFactory.newDocumentBuilder();
+                Document document = documentBuilder.newDocument();
+
+                Element rootElement = document.createElement("llaves");
+                document.appendChild(rootElement);
+
+                for (String enlace : enlaces) {
+                    driver.get(enlace);
+
+                    List<WebElement> open = driver.findElements(By.className("uahaobodgycugfmkhrqpjvevkh"));
+                    WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
+                    WebElement precio = driver.findElement(By.className("bthixlgmwxbzrkuwifzzyvnpey"));
+
+                    String nombrellave = nombre.getText();
+                    String preciollave = precio.getText();
+
+                    Element llaveElement = document.createElement("llave");
+                    rootElement.appendChild(llaveElement);
+
+                    Element nombreElement = document.createElement("nombre");
+                    nombreElement.appendChild(document.createTextNode(nombrellave));
+                    llaveElement.appendChild(nombreElement);
+
+                    Element precioElement = document.createElement("precio");
+                    precioElement.appendChild(document.createTextNode(preciollave));
+                    llaveElement.appendChild(precioElement);
+
+                    for (WebElement key : open) {
+                        WebElement cajaQuePuedoAbrir = key.findElement(By.className("jbpjkjachbxfigkusfwkkdcznu"));
+                        Element cajaElement = document.createElement("caja");
+                        cajaElement.appendChild(document.createTextNode(cajaQuePuedoAbrir.getText()));
+                        llaveElement.appendChild(cajaElement);
+                    }
+
+                    System.out.println("Generando datos_llaves.xml");
+                }
+
+                // exribimos en el documneto
+                TransformerFactory transformerFactory = TransformerFactory.newInstance();
+                Transformer transformer = transformerFactory.newTransformer();
+                transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+                transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+
+                DOMSource source = new DOMSource(document);
+                StreamResult result = new StreamResult(new FileWriter("llave.xml"));
+                transformer.transform(source, result);
+
+                System.out.println("Archivo XML generado correctamente.");
+
+            } catch (ParserConfigurationException | IOException | TransformerException e) {
+                e.printStackTrace();
+            } finally {
+                driver.quit();
+            }
+        }
+
 
     public void sacarCajas() throws InterruptedException {
         FirefoxOptions options = new FirefoxOptions();
