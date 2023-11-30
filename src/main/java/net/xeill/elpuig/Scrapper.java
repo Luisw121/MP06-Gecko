@@ -59,19 +59,25 @@ public class Scrapper {
             for (String enlace : listaEnlaces) {
                 driver.get(enlace);
 
-                List<WebElement> stats = driver.findElements(By.className("oenizlvgmxdjluppuqjqdwtwng"));
                 WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
                 String nombreArma = nombre.getText();
 
-                List<String> datosArmaList = new ArrayList<>();
-                datosArmaList.add(nombreArma);
+                List<WebElement> stats = driver.findElements(By.className("oenizlvgmxdjluppuqjqdwtwng"));
 
+                String[] datosArmaList = new String[6];
+                datosArmaList[0] = nombreArma;
+
+                int i = 1;
                 for (WebElement stat : stats) {
                     WebElement numeros = stat.findElement(By.className("jykqpwpklhfwmblgijelpcvbzy"));
-                    datosArmaList.add(numeros.getText());
+                    datosArmaList[i] = numeros.getText();
+                    i++;
+                    if (i >= 6) {
+                        break; // Salir del bucle si ya se recogieron todas las estadísticas necesarias
+                    }
                 }
 
-                csvWriter.writeNext(datosArmaList.toArray(new String[0]));
+                csvWriter.writeNext(datosArmaList);
                 System.out.println("Imprimiendo en datos_armas.csv");
             }
         } catch (IOException e) {
