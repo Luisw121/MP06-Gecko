@@ -1,0 +1,1299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<skins>
+  <skin>
+    <nombre_caja>Revolution Case</nombre_caja>
+    <nombre_skin>M4A4</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Revolution Case</nombre_caja>
+    <nombre_skin>AK-47</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Revolution Case</nombre_caja>
+    <nombre_skin>AWP</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Revolution Case</nombre_caja>
+    <nombre_skin>P2000</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Revolution Case</nombre_caja>
+    <nombre_skin>UMP-45</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Revolution Case</nombre_caja>
+    <nombre_skin>M4A1-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Revolution Case</nombre_caja>
+    <nombre_skin>R8 Revolver</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Revolution Case</nombre_caja>
+    <nombre_skin>P90</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Revolution Case</nombre_caja>
+    <nombre_skin>Glock-18</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Revolution Case</nombre_caja>
+    <nombre_skin>MAC-10</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Revolution Case</nombre_caja>
+    <nombre_skin>MP5-SD</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Revolution Case</nombre_caja>
+    <nombre_skin>MP9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Revolution Case</nombre_caja>
+    <nombre_skin>MAG-7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Revolution Case</nombre_caja>
+    <nombre_skin>Tec-9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Revolution Case</nombre_caja>
+    <nombre_skin>P250</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Revolution Case</nombre_caja>
+    <nombre_skin>SCAR-20</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Revolution Case</nombre_caja>
+    <nombre_skin>SG 553</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Recoil Case</nombre_caja>
+    <nombre_skin>USP-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Recoil Case</nombre_caja>
+    <nombre_skin>AWP</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Recoil Case</nombre_caja>
+    <nombre_skin>AK-47</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Recoil Case</nombre_caja>
+    <nombre_skin>Sawed-Off</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Recoil Case</nombre_caja>
+    <nombre_skin>P250</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Recoil Case</nombre_caja>
+    <nombre_skin>Dual Berettas</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Recoil Case</nombre_caja>
+    <nombre_skin>R8 Revolver</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Recoil Case</nombre_caja>
+    <nombre_skin>SG 553</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Recoil Case</nombre_caja>
+    <nombre_skin>M249</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Recoil Case</nombre_caja>
+    <nombre_skin>P90</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Recoil Case</nombre_caja>
+    <nombre_skin>M4A4</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Recoil Case</nombre_caja>
+    <nombre_skin>FAMAS</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Recoil Case</nombre_caja>
+    <nombre_skin>Glock-18</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Recoil Case</nombre_caja>
+    <nombre_skin>MAC-10</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Recoil Case</nombre_caja>
+    <nombre_skin>UMP-45</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Recoil Case</nombre_caja>
+    <nombre_skin>Negev</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Recoil Case</nombre_caja>
+    <nombre_skin>Galil AR</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Dreams &amp; Nightmares Case</nombre_caja>
+    <nombre_skin>AK-47</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Dreams &amp; Nightmares Case</nombre_caja>
+    <nombre_skin>MP9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Dreams &amp; Nightmares Case</nombre_caja>
+    <nombre_skin>FAMAS</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Dreams &amp; Nightmares Case</nombre_caja>
+    <nombre_skin>MP7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Dreams &amp; Nightmares Case</nombre_caja>
+    <nombre_skin>Dual Berettas</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Dreams &amp; Nightmares Case</nombre_caja>
+    <nombre_skin>M4A1-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Dreams &amp; Nightmares Case</nombre_caja>
+    <nombre_skin>USP-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Dreams &amp; Nightmares Case</nombre_caja>
+    <nombre_skin>G3SG1</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Dreams &amp; Nightmares Case</nombre_caja>
+    <nombre_skin>PP-Bizon</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Dreams &amp; Nightmares Case</nombre_caja>
+    <nombre_skin>XM1014</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Dreams &amp; Nightmares Case</nombre_caja>
+    <nombre_skin>Five-SeveN</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Dreams &amp; Nightmares Case</nombre_caja>
+    <nombre_skin>MAC-10</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Dreams &amp; Nightmares Case</nombre_caja>
+    <nombre_skin>MP5-SD</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Dreams &amp; Nightmares Case</nombre_caja>
+    <nombre_skin>Sawed-Off</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Dreams &amp; Nightmares Case</nombre_caja>
+    <nombre_skin>MAG-7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Dreams &amp; Nightmares Case</nombre_caja>
+    <nombre_skin>P2000</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Dreams &amp; Nightmares Case</nombre_caja>
+    <nombre_skin>SCAR-20</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Riptide Case</nombre_caja>
+    <nombre_skin>Desert Eagle</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Riptide Case</nombre_caja>
+    <nombre_skin>AK-47</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Riptide Case</nombre_caja>
+    <nombre_skin>Glock-18</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Riptide Case</nombre_caja>
+    <nombre_skin>M4A4</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Riptide Case</nombre_caja>
+    <nombre_skin>MAC-10</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Riptide Case</nombre_caja>
+    <nombre_skin>SSG 08</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Riptide Case</nombre_caja>
+    <nombre_skin>MP9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Riptide Case</nombre_caja>
+    <nombre_skin>FAMAS</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Riptide Case</nombre_caja>
+    <nombre_skin>USP-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Riptide Case</nombre_caja>
+    <nombre_skin>XM1014</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Riptide Case</nombre_caja>
+    <nombre_skin>Five-SeveN</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Riptide Case</nombre_caja>
+    <nombre_skin>MAG-7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Riptide Case</nombre_caja>
+    <nombre_skin>PP-Bizon</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Riptide Case</nombre_caja>
+    <nombre_skin>AUG</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Riptide Case</nombre_caja>
+    <nombre_skin>Dual Berettas</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Riptide Case</nombre_caja>
+    <nombre_skin>MP7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Riptide Case</nombre_caja>
+    <nombre_skin>G3SG1</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Snakebite Case</nombre_caja>
+    <nombre_skin>USP-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Snakebite Case</nombre_caja>
+    <nombre_skin>M4A4</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Snakebite Case</nombre_caja>
+    <nombre_skin>Galil AR</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Snakebite Case</nombre_caja>
+    <nombre_skin>AK-47</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Snakebite Case</nombre_caja>
+    <nombre_skin>MP9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Snakebite Case</nombre_caja>
+    <nombre_skin>XM1014</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Snakebite Case</nombre_caja>
+    <nombre_skin>Desert Eagle</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Snakebite Case</nombre_caja>
+    <nombre_skin>P250</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Snakebite Case</nombre_caja>
+    <nombre_skin>Negev</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Snakebite Case</nombre_caja>
+    <nombre_skin>MAC-10</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Snakebite Case</nombre_caja>
+    <nombre_skin>Glock-18</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Snakebite Case</nombre_caja>
+    <nombre_skin>CZ75-Auto</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Snakebite Case</nombre_caja>
+    <nombre_skin>R8 Revolver</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Snakebite Case</nombre_caja>
+    <nombre_skin>SG 553</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Snakebite Case</nombre_caja>
+    <nombre_skin>M249</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Snakebite Case</nombre_caja>
+    <nombre_skin>UMP-45</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Snakebite Case</nombre_caja>
+    <nombre_skin>Nova</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Broken Fang Case</nombre_caja>
+    <nombre_skin>M4A1-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Broken Fang Case</nombre_caja>
+    <nombre_skin>Glock-18</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Broken Fang Case</nombre_caja>
+    <nombre_skin>Five-SeveN</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Broken Fang Case</nombre_caja>
+    <nombre_skin>USP-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Broken Fang Case</nombre_caja>
+    <nombre_skin>M4A4</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Broken Fang Case</nombre_caja>
+    <nombre_skin>AWP</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Broken Fang Case</nombre_caja>
+    <nombre_skin>Dual Berettas</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Broken Fang Case</nombre_caja>
+    <nombre_skin>Nova</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Broken Fang Case</nombre_caja>
+    <nombre_skin>UMP-45</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Broken Fang Case</nombre_caja>
+    <nombre_skin>SSG 08</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Broken Fang Case</nombre_caja>
+    <nombre_skin>Galil AR</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Broken Fang Case</nombre_caja>
+    <nombre_skin>CZ75-Auto</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Broken Fang Case</nombre_caja>
+    <nombre_skin>MP5-SD</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Broken Fang Case</nombre_caja>
+    <nombre_skin>M249</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Broken Fang Case</nombre_caja>
+    <nombre_skin>P250</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Broken Fang Case</nombre_caja>
+    <nombre_skin>G3SG1</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Broken Fang Case</nombre_caja>
+    <nombre_skin>P90</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Fracture Case</nombre_caja>
+    <nombre_skin>Desert Eagle</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Fracture Case</nombre_caja>
+    <nombre_skin>AK-47</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Fracture Case</nombre_caja>
+    <nombre_skin>Glock-18</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Fracture Case</nombre_caja>
+    <nombre_skin>XM1014</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Fracture Case</nombre_caja>
+    <nombre_skin>M4A4</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Fracture Case</nombre_caja>
+    <nombre_skin>MAG-7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Fracture Case</nombre_caja>
+    <nombre_skin>MAC-10</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Fracture Case</nombre_caja>
+    <nombre_skin>Galil AR</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Fracture Case</nombre_caja>
+    <nombre_skin>MP5-SD</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Fracture Case</nombre_caja>
+    <nombre_skin>Tec-9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Fracture Case</nombre_caja>
+    <nombre_skin>SSG 08</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Fracture Case</nombre_caja>
+    <nombre_skin>P2000</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Fracture Case</nombre_caja>
+    <nombre_skin>PP-Bizon</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Fracture Case</nombre_caja>
+    <nombre_skin>P90</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Fracture Case</nombre_caja>
+    <nombre_skin>Negev</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Fracture Case</nombre_caja>
+    <nombre_skin>P250</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Fracture Case</nombre_caja>
+    <nombre_skin>SG 553</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma 2 Case</nombre_caja>
+    <nombre_skin>M4A1-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma 2 Case</nombre_caja>
+    <nombre_skin>Glock-18</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma 2 Case</nombre_caja>
+    <nombre_skin>MAC-10</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma 2 Case</nombre_caja>
+    <nombre_skin>AK-47</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma 2 Case</nombre_caja>
+    <nombre_skin>MAG-7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma 2 Case</nombre_caja>
+    <nombre_skin>P2000</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma 2 Case</nombre_caja>
+    <nombre_skin>SSG 08</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma 2 Case</nombre_caja>
+    <nombre_skin>SG 553</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma 2 Case</nombre_caja>
+    <nombre_skin>AWP</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma 2 Case</nombre_caja>
+    <nombre_skin>SCAR-20</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma 2 Case</nombre_caja>
+    <nombre_skin>Sawed-Off</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma 2 Case</nombre_caja>
+    <nombre_skin>Desert Eagle</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma 2 Case</nombre_caja>
+    <nombre_skin>AUG</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma 2 Case</nombre_caja>
+    <nombre_skin>MP5-SD</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma 2 Case</nombre_caja>
+    <nombre_skin>CZ75-Auto</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma 2 Case</nombre_caja>
+    <nombre_skin>Negev</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma 2 Case</nombre_caja>
+    <nombre_skin>R8 Revolver</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Shattered Web Case</nombre_caja>
+    <nombre_skin>AWP</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Shattered Web Case</nombre_caja>
+    <nombre_skin>MAC-10</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Shattered Web Case</nombre_caja>
+    <nombre_skin>SSG 08</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Shattered Web Case</nombre_caja>
+    <nombre_skin>Tec-9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Shattered Web Case</nombre_caja>
+    <nombre_skin>SG 553</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Shattered Web Case</nombre_caja>
+    <nombre_skin>AK-47</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Shattered Web Case</nombre_caja>
+    <nombre_skin>P2000</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Shattered Web Case</nombre_caja>
+    <nombre_skin>AUG</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Shattered Web Case</nombre_caja>
+    <nombre_skin>PP-Bizon</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Shattered Web Case</nombre_caja>
+    <nombre_skin>MP7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Shattered Web Case</nombre_caja>
+    <nombre_skin>Dual Berettas</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Shattered Web Case</nombre_caja>
+    <nombre_skin>R8 Revolver</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Shattered Web Case</nombre_caja>
+    <nombre_skin>Nova</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Shattered Web Case</nombre_caja>
+    <nombre_skin>MP5-SD</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Shattered Web Case</nombre_caja>
+    <nombre_skin>G3SG1</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Shattered Web Case</nombre_caja>
+    <nombre_skin>M249</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Shattered Web Case</nombre_caja>
+    <nombre_skin>SCAR-20</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>CS20 Case</nombre_caja>
+    <nombre_skin>AWP</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>CS20 Case</nombre_caja>
+    <nombre_skin>FAMAS</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>CS20 Case</nombre_caja>
+    <nombre_skin>MP9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>CS20 Case</nombre_caja>
+    <nombre_skin>P90</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>CS20 Case</nombre_caja>
+    <nombre_skin>AUG</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>CS20 Case</nombre_caja>
+    <nombre_skin>MP5-SD</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>CS20 Case</nombre_caja>
+    <nombre_skin>UMP-45</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>CS20 Case</nombre_caja>
+    <nombre_skin>P250</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>CS20 Case</nombre_caja>
+    <nombre_skin>M249</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>CS20 Case</nombre_caja>
+    <nombre_skin>Five-SeveN</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>CS20 Case</nombre_caja>
+    <nombre_skin>Glock-18</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>CS20 Case</nombre_caja>
+    <nombre_skin>SCAR-20</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>CS20 Case</nombre_caja>
+    <nombre_skin>FAMAS</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>CS20 Case</nombre_caja>
+    <nombre_skin>MAC-10</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>CS20 Case</nombre_caja>
+    <nombre_skin>MAG-7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>CS20 Case</nombre_caja>
+    <nombre_skin>Tec-9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>CS20 Case</nombre_caja>
+    <nombre_skin>Dual Berettas</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>X-Ray P250 Package</nombre_caja>
+    <nombre_skin>P250</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma Case</nombre_caja>
+    <nombre_skin>M4A4</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma Case</nombre_caja>
+    <nombre_skin>AUG</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma Case</nombre_caja>
+    <nombre_skin>XM1014</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma Case</nombre_caja>
+    <nombre_skin>AWP</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma Case</nombre_caja>
+    <nombre_skin>Five-SeveN</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma Case</nombre_caja>
+    <nombre_skin>Desert Eagle</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma Case</nombre_caja>
+    <nombre_skin>R8 Revolver</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma Case</nombre_caja>
+    <nombre_skin>MP5-SD</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma Case</nombre_caja>
+    <nombre_skin>AK-47</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma Case</nombre_caja>
+    <nombre_skin>Tec-9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma Case</nombre_caja>
+    <nombre_skin>UMP-45</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma Case</nombre_caja>
+    <nombre_skin>MAC-10</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma Case</nombre_caja>
+    <nombre_skin>Galil AR</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma Case</nombre_caja>
+    <nombre_skin>P250</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma Case</nombre_caja>
+    <nombre_skin>P90</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma Case</nombre_caja>
+    <nombre_skin>FAMAS</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Prisma Case</nombre_caja>
+    <nombre_skin>MP7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Danger Zone Case</nombre_caja>
+    <nombre_skin>AK-47</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Danger Zone Case</nombre_caja>
+    <nombre_skin>AWP</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Danger Zone Case</nombre_caja>
+    <nombre_skin>Desert Eagle</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Danger Zone Case</nombre_caja>
+    <nombre_skin>UMP-45</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Danger Zone Case</nombre_caja>
+    <nombre_skin>MP5-SD</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Danger Zone Case</nombre_caja>
+    <nombre_skin>MAC-10</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Danger Zone Case</nombre_caja>
+    <nombre_skin>M4A4</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Danger Zone Case</nombre_caja>
+    <nombre_skin>Galil AR</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Danger Zone Case</nombre_caja>
+    <nombre_skin>P250</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Danger Zone Case</nombre_caja>
+    <nombre_skin>G3SG1</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Danger Zone Case</nombre_caja>
+    <nombre_skin>USP-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Danger Zone Case</nombre_caja>
+    <nombre_skin>Tec-9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Danger Zone Case</nombre_caja>
+    <nombre_skin>Glock-18</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Danger Zone Case</nombre_caja>
+    <nombre_skin>Sawed-Off</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Danger Zone Case</nombre_caja>
+    <nombre_skin>MP9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Danger Zone Case</nombre_caja>
+    <nombre_skin>SG 553</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Danger Zone Case</nombre_caja>
+    <nombre_skin>Nova</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Horizon Case</nombre_caja>
+    <nombre_skin>AK-47</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Horizon Case</nombre_caja>
+    <nombre_skin>Desert Eagle</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Horizon Case</nombre_caja>
+    <nombre_skin>M4A1-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Horizon Case</nombre_caja>
+    <nombre_skin>FAMAS</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Horizon Case</nombre_caja>
+    <nombre_skin>Sawed-Off</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Horizon Case</nombre_caja>
+    <nombre_skin>AWP</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Horizon Case</nombre_caja>
+    <nombre_skin>Nova</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Horizon Case</nombre_caja>
+    <nombre_skin>CZ75-Auto</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Horizon Case</nombre_caja>
+    <nombre_skin>MP7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Horizon Case</nombre_caja>
+    <nombre_skin>G3SG1</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Horizon Case</nombre_caja>
+    <nombre_skin>P90</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Horizon Case</nombre_caja>
+    <nombre_skin>Glock-18</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Horizon Case</nombre_caja>
+    <nombre_skin>Tec-9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Horizon Case</nombre_caja>
+    <nombre_skin>MP9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Horizon Case</nombre_caja>
+    <nombre_skin>Dual Berettas</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Horizon Case</nombre_caja>
+    <nombre_skin>AUG</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Horizon Case</nombre_caja>
+    <nombre_skin>R8 Revolver</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Clutch Case</nombre_caja>
+    <nombre_skin>M4A4</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Clutch Case</nombre_caja>
+    <nombre_skin>USP-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Clutch Case</nombre_caja>
+    <nombre_skin>AWP</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Clutch Case</nombre_caja>
+    <nombre_skin>AUG</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Clutch Case</nombre_caja>
+    <nombre_skin>MP7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Clutch Case</nombre_caja>
+    <nombre_skin>MAG-7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Clutch Case</nombre_caja>
+    <nombre_skin>Glock-18</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Clutch Case</nombre_caja>
+    <nombre_skin>UMP-45</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Clutch Case</nombre_caja>
+    <nombre_skin>Nova</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Clutch Case</nombre_caja>
+    <nombre_skin>Negev</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Clutch Case</nombre_caja>
+    <nombre_skin>R8 Revolver</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Clutch Case</nombre_caja>
+    <nombre_skin>P2000</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Clutch Case</nombre_caja>
+    <nombre_skin>MP9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Clutch Case</nombre_caja>
+    <nombre_skin>Five-SeveN</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Clutch Case</nombre_caja>
+    <nombre_skin>PP-Bizon</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Clutch Case</nombre_caja>
+    <nombre_skin>XM1014</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Clutch Case</nombre_caja>
+    <nombre_skin>SG 553</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum 2 Case</nombre_caja>
+    <nombre_skin>AK-47</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum 2 Case</nombre_caja>
+    <nombre_skin>M4A1-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum 2 Case</nombre_caja>
+    <nombre_skin>PP-Bizon</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum 2 Case</nombre_caja>
+    <nombre_skin>R8 Revolver</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum 2 Case</nombre_caja>
+    <nombre_skin>P250</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum 2 Case</nombre_caja>
+    <nombre_skin>XM1014</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum 2 Case</nombre_caja>
+    <nombre_skin>CZ75-Auto</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum 2 Case</nombre_caja>
+    <nombre_skin>MP9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum 2 Case</nombre_caja>
+    <nombre_skin>SG 553</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum 2 Case</nombre_caja>
+    <nombre_skin>UMP-45</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum 2 Case</nombre_caja>
+    <nombre_skin>Glock-18</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum 2 Case</nombre_caja>
+    <nombre_skin>AUG</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum 2 Case</nombre_caja>
+    <nombre_skin>Tec-9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum 2 Case</nombre_caja>
+    <nombre_skin>Sawed-Off</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum 2 Case</nombre_caja>
+    <nombre_skin>G3SG1</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum 2 Case</nombre_caja>
+    <nombre_skin>MAC-10</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum 2 Case</nombre_caja>
+    <nombre_skin>SCAR-20</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Hydra Case</nombre_caja>
+    <nombre_skin>AWP</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Hydra Case</nombre_caja>
+    <nombre_skin>Five-SeveN</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Hydra Case</nombre_caja>
+    <nombre_skin>M4A4</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Hydra Case</nombre_caja>
+    <nombre_skin>Galil AR</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Hydra Case</nombre_caja>
+    <nombre_skin>Dual Berettas</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Hydra Case</nombre_caja>
+    <nombre_skin>USP-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Hydra Case</nombre_caja>
+    <nombre_skin>AK-47</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Hydra Case</nombre_caja>
+    <nombre_skin>P250</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Hydra Case</nombre_caja>
+    <nombre_skin>P2000</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Hydra Case</nombre_caja>
+    <nombre_skin>P90</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Hydra Case</nombre_caja>
+    <nombre_skin>M4A1-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Hydra Case</nombre_caja>
+    <nombre_skin>SSG 08</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Hydra Case</nombre_caja>
+    <nombre_skin>Tec-9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Hydra Case</nombre_caja>
+    <nombre_skin>MAG-7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Hydra Case</nombre_caja>
+    <nombre_skin>FAMAS</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Hydra Case</nombre_caja>
+    <nombre_skin>MAC-10</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Operation Hydra Case</nombre_caja>
+    <nombre_skin>UMP-45</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum Case</nombre_caja>
+    <nombre_skin>AK-47</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum Case</nombre_caja>
+    <nombre_skin>USP-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum Case</nombre_caja>
+    <nombre_skin>M4A1-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum Case</nombre_caja>
+    <nombre_skin>AWP</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum Case</nombre_caja>
+    <nombre_skin>CZ75-Auto</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum Case</nombre_caja>
+    <nombre_skin>Galil AR</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum Case</nombre_caja>
+    <nombre_skin>UMP-45</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum Case</nombre_caja>
+    <nombre_skin>MAC-10</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum Case</nombre_caja>
+    <nombre_skin>M249</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum Case</nombre_caja>
+    <nombre_skin>XM1014</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum Case</nombre_caja>
+    <nombre_skin>Sawed-Off</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum Case</nombre_caja>
+    <nombre_skin>Desert Eagle</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum Case</nombre_caja>
+    <nombre_skin>MP7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum Case</nombre_caja>
+    <nombre_skin>Five-SeveN</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum Case</nombre_caja>
+    <nombre_skin>SCAR-20</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum Case</nombre_caja>
+    <nombre_skin>P250</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Spectrum Case</nombre_caja>
+    <nombre_skin>PP-Bizon</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Glove Case</nombre_caja>
+    <nombre_skin>M4A4</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Glove Case</nombre_caja>
+    <nombre_skin>SSG 08</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Glove Case</nombre_caja>
+    <nombre_skin>FAMAS</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Glove Case</nombre_caja>
+    <nombre_skin>P90</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Glove Case</nombre_caja>
+    <nombre_skin>Sawed-Off</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Glove Case</nombre_caja>
+    <nombre_skin>USP-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Glove Case</nombre_caja>
+    <nombre_skin>M4A1-S</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Glove Case</nombre_caja>
+    <nombre_skin>Dual Berettas</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Glove Case</nombre_caja>
+    <nombre_skin>Glock-18</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Glove Case</nombre_caja>
+    <nombre_skin>G3SG1</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Glove Case</nombre_caja>
+    <nombre_skin>P2000</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Glove Case</nombre_caja>
+    <nombre_skin>Nova</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Glove Case</nombre_caja>
+    <nombre_skin>MP7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Glove Case</nombre_caja>
+    <nombre_skin>Galil AR</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Glove Case</nombre_caja>
+    <nombre_skin>MP9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Glove Case</nombre_caja>
+    <nombre_skin>CZ75-Auto</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Glove Case</nombre_caja>
+    <nombre_skin>MAG-7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Gamma 2 Case</nombre_caja>
+    <nombre_skin>AK-47</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Gamma 2 Case</nombre_caja>
+    <nombre_skin>FAMAS</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Gamma 2 Case</nombre_caja>
+    <nombre_skin>Tec-9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Gamma 2 Case</nombre_caja>
+    <nombre_skin>Desert Eagle</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Gamma 2 Case</nombre_caja>
+    <nombre_skin>MP9</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Gamma 2 Case</nombre_caja>
+    <nombre_skin>AUG</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Gamma 2 Case</nombre_caja>
+    <nombre_skin>SG 553</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Gamma 2 Case</nombre_caja>
+    <nombre_skin>Glock-18</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Gamma 2 Case</nombre_caja>
+    <nombre_skin>SCAR-20</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Gamma 2 Case</nombre_caja>
+    <nombre_skin>MAG-7</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Gamma 2 Case</nombre_caja>
+    <nombre_skin>P90</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Gamma 2 Case</nombre_caja>
+    <nombre_skin>CZ75-Auto</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Gamma 2 Case</nombre_caja>
+    <nombre_skin>UMP-45</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Gamma 2 Case</nombre_caja>
+    <nombre_skin>Five-SeveN</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Gamma 2 Case</nombre_caja>
+    <nombre_skin>G3SG1</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Gamma 2 Case</nombre_caja>
+    <nombre_skin>XM1014</nombre_skin>
+  </skin>
+  <skin>
+    <nombre_caja>Gamma 2 Case</nombre_caja>
+    <nombre_skin>Negev</nombre_skin>
+  </skin>
+</skins>

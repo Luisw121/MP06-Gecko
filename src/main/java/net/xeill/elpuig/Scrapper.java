@@ -181,7 +181,7 @@ public class Scrapper {
                 //Aqui pillo las cajas que puedo abrir
                 List<WebElement> open = driver.findElements(By.className("uahaobodgycugfmkhrqpjvevkh"));
 
-                //Aqui pillo el nombre de las cajas
+                //Aqui pillo el nombre de las llaves
                 WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
 
                 //Aqui pillo el precio de la llave
@@ -215,12 +215,83 @@ public class Scrapper {
 
                 System.out.println("Imprimiendo en datos_llaves.csv");
             }
+            generarArchivoXML2(enlaces, driver);
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             driver.quit();
         }
     }
+
+    public void generarArchivoXML2(ArrayList<String> enlaces, WebDriver driver) {
+        try {
+            DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
+            Document document = documentBuilder.newDocument();
+
+            Element llavesElement = document.createElement("llaves");
+            document.appendChild(llavesElement);
+
+            for (String enlace : enlaces) {
+                driver.get(enlace);
+                Thread.sleep(2000); // Espera corta para asegurar la carga de la página
+
+                // Obtener el nombre de la llave
+                WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
+                String nombre_llave = nombre.getText();
+
+                // Obtener el precio de la llave
+                WebElement precio = driver.findElement(By.className("bthixlgmwxbzrkuwifzzyvnpey"));
+                String precio_llave = precio.getText();
+
+                // Crear el elemento XML de la llave
+                Element llaveElement = document.createElement("llave");
+                llavesElement.appendChild(llaveElement);
+
+                // Crear el elemento XML del nombre
+                Element nombreElement = document.createElement("nombre");
+                nombreElement.appendChild(document.createTextNode(nombre_llave));
+                llaveElement.appendChild(nombreElement);
+
+                // Crear el elemento XML del precio
+                Element precioElement = document.createElement("precio");
+                precioElement.appendChild(document.createTextNode(precio_llave));
+                llaveElement.appendChild(precioElement);
+
+                // Encontrar las cajas que se pueden abrir con la llave
+                List<WebElement> open = driver.findElements(By.className("uahaobodgycugfmkhrqpjvevkh"));
+
+                int i = 1;
+                for (WebElement key : open) {
+                    // Encontrar las cajas que la llave puede abrir
+                    WebElement cajas = key.findElement(By.className("jbpjkjachbxfigkusfwkkdcznu"));
+                        Element caseElement = document.createElement("caja_que_puedo_abrir_" + i);
+                        caseElement.appendChild(document.createTextNode(cajas.getText()));
+                        llaveElement.appendChild(caseElement);
+                        i++;
+
+                }
+            }
+
+            // Crear el archivo XML
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = transformerFactory.newTransformer();
+            transformer.setOutputProperty(OutputKeys.INDENT, "YES");
+            transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+
+            DOMSource source = new DOMSource(document);
+            StreamResult result = new StreamResult(new File("llaves.xml"));
+            transformer.transform(source, result);
+
+            System.out.println("Archivo XML generado correctamente");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+
 
     public void sacarCajas() throws InterruptedException {
         FirefoxOptions options = new FirefoxOptions();
@@ -387,10 +458,56 @@ public class Scrapper {
             for (String[] dato : datosSkins) {
                 csvWriter.writeNext(dato);
             }
+            generarArchivoXMLSkins(datosSkins);
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             driver.quit();
         }
     }
+
+    public void generarArchivoXMLSkins(ArrayList<String[]> datosSkins) {
+        try {
+            DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
+            Document document = documentBuilder.newDocument();
+
+            Element skinsElement = document.createElement("skins");
+            document.appendChild(skinsElement);
+
+            for (String[] datoSkin : datosSkins) {
+                String nombreCaja = datoSkin[0];
+                String nombreSkin = datoSkin[1];
+
+                // Crear elemento XML de la skin
+                Element skinElement = document.createElement("skin");
+                skinsElement.appendChild(skinElement);
+
+                // Crear elemento XML del nombre de la caja
+                Element cajaElement = document.createElement("nombre_caja");
+                cajaElement.appendChild(document.createTextNode(nombreCaja));
+                skinElement.appendChild(cajaElement);
+
+                // Crear elemento XML del nombre de la skin
+                Element nombreElement = document.createElement("nombre_skin");
+                nombreElement.appendChild(document.createTextNode(nombreSkin));
+                skinElement.appendChild(nombreElement);
+            }
+
+            // Crear el archivo XML
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = transformerFactory.newTransformer();
+            transformer.setOutputProperty(OutputKeys.INDENT, "YES");
+            transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+
+            DOMSource source = new DOMSource(document);
+            StreamResult result = new StreamResult(new File("skins.xml"));
+            transformer.transform(source, result);
+
+            System.out.println("Archivo XML generado correctamente");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }
