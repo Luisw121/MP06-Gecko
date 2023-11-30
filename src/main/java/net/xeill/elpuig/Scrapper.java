@@ -243,21 +243,14 @@ public class Scrapper {
                 driver.get(enlace);
                 //todas las cajas
                 List<WebElement> nom_caja = driver.findElements(By.className("iwxsbgrvudiuruwvxmapevbvcl"));
-                //String para guardar todos los nombres de las cajas
 
-                //array par aguardar los nombres de las cajas
-                String[] array3 = new String[1];
-
-                int i = 0;
                 for (WebElement rarity : nom_caja) {
                     //aqui se encuentra el nombre de la caja y la metemos en la array
                     WebElement nombre_caja = rarity.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
-                    array3[i] = nombre_caja.getText();
-                    i++;
+                   String[] array3 = {nombre_caja.getText()};
+                   //imprimimos las cajas
+                    csvWriter.writeNext(array3);
                 }
-                //imprimimos las cajas
-                csvWriter.writeNext(array3);
-
                 System.out.println("Imprimiendo en nombre_cajas.csv");
             }
             generarArchivoXML3(listaDeEnlaces, driver);
