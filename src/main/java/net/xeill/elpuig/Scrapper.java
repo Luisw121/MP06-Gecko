@@ -246,7 +246,7 @@ public class Scrapper {
                 //String para guardar todos los nombres de las cajas
 
                 //array par aguardar los nombres de las cajas
-                String[] array3 = new String[2];
+                String[] array3 = new String[1];
 
                 int i = 0;
                 for (WebElement rarity : nom_caja) {
