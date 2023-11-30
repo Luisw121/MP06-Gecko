@@ -52,9 +52,9 @@ public class Scrapper {
 
         String archivocsv1 = "datos_armas.csv";
 
-        try (FileWriter fileWriter = new FileWriter(archivocsv1)) {
+        try (CSVWriter csvWriter = new CSVWriter(new FileWriter(archivocsv1))) {
             String[] header = {"Nombre del arma", "Damage LMB", "Damage RMB", "Kill Award", "Running Speed", "Side"};
-            fileWriter.append(String.join(",", header)).append("\n");
+            csvWriter.writeNext(header);
 
             for (String enlace : listaEnlaces) {
                 driver.get(enlace);
@@ -71,7 +71,7 @@ public class Scrapper {
                     datosArmaList.add(numeros.getText());
                 }
 
-                fileWriter.append(String.join(",", datosArmaList)).append("\n");
+                csvWriter.writeNext(datosArmaList.toArray(new String[0]));
                 System.out.println("Imprimiendo en datos_armas.csv");
             }
         } catch (IOException e) {
@@ -81,7 +81,6 @@ public class Scrapper {
             driver.quit();
         }
     }
-
     public void generarArchivoXML(ArrayList<String> listaEnlaces, WebDriver driver) {
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder documentBuilder;
