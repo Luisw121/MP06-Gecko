@@ -98,52 +98,52 @@ public class Scrapper {
     }
 
     public void generarArchivoXML(ArrayList<String> listaEnlaces, WebDriver driver) {
-            DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder documentBuilder;
+        DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder documentBuilder;
 
-            try {
-                documentBuilder = documentBuilderFactory.newDocumentBuilder();
-                Document document = documentBuilder.newDocument();
+        try {
+            documentBuilder = documentBuilderFactory.newDocumentBuilder();
+            Document document = documentBuilder.newDocument();
 
-                Element armasElement = document.createElement("armas");
-                document.appendChild(armasElement);
+            Element armasElement = document.createElement("armas");
+            document.appendChild(armasElement);
 
-                for (String enlaace : listaEnlaces) {
-                    driver.get(enlaace);
-                    List<WebElement> stats = driver.findElements(By.className("oenizlvgmxdjluppuqjqdwtwng"));
-                    WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
-                    String nombreArma = nombre.getText();
+            for (String enlaace : listaEnlaces) {
+                driver.get(enlaace);
+                List<WebElement> stats = driver.findElements(By.className("oenizlvgmxdjluppuqjqdwtwng"));
+                WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
+                String nombreArma = nombre.getText();
 
-                    Element armaElement  =document.createElement("arma");
-                    armasElement.appendChild(armaElement);
+                Element armaElement  =document.createElement("arma");
+                armasElement.appendChild(armaElement);
 
-                    Element nombreElement = document.createElement("nombre");
-                    nombreElement.appendChild(document.createTextNode(nombreArma));
-                    armaElement.appendChild(nombreElement);
+                Element nombreElement = document.createElement("nombre");
+                nombreElement.appendChild(document.createTextNode(nombreArma));
+                armaElement.appendChild(nombreElement);
 
-                    int i = 1;
-                    for (WebElement stat : stats) {
-                        WebElement numeros = stat.findElement(By.className("jykqpwpklhfwmblgijelpcvbzy"));
-                        Element statElement = document.createElement("stat" + i);
-                        statElement.appendChild(document.createTextNode(numeros.getText()));
-                        armaElement.appendChild(statElement);
-                        i++;
-                    }
+                int i = 1;
+                for (WebElement stat : stats) {
+                    WebElement numeros = stat.findElement(By.className("jykqpwpklhfwmblgijelpcvbzy"));
+                    Element statElement = document.createElement("stat" + i);
+                    statElement.appendChild(document.createTextNode(numeros.getText()));
+                    armaElement.appendChild(statElement);
+                    i++;
                 }
-                TransformerFactory transformerFactory = TransformerFactory.newInstance();
-                Transformer transformer = transformerFactory.newTransformer();
-                transformer.setOutputProperty(javax.xml.transform.OutputKeys.INDENT, "yes"); // Habilitar el formato
-                transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2"); // Establecer la cantidad de espacios
-
-                DOMSource source = new DOMSource(document);
-                StreamResult result = new StreamResult(new File("armas.xml"));
-                transformer.transform(source, result);
-
-                System.out.println("Archivo XML generado correctamente.");
-
-            }catch (Exception e) {
-                e.printStackTrace();
             }
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = transformerFactory.newTransformer();
+            transformer.setOutputProperty(javax.xml.transform.OutputKeys.INDENT, "yes"); // Habilitar el formato
+            transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2"); // Establecer la cantidad de espacios
+
+            DOMSource source = new DOMSource(document);
+            StreamResult result = new StreamResult(new File("armas.xml"));
+            transformer.transform(source, result);
+
+            System.out.println("Archivo XML generado correctamente.");
+
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 
@@ -215,83 +215,12 @@ public class Scrapper {
 
                 System.out.println("Imprimiendo en datos_llaves.csv");
             }
-            generarArchivoXML2(enlaces, driver);
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             driver.quit();
         }
     }
-
-    public void generarArchivoXML2(ArrayList<String> enlaces, WebDriver driver) {
-        try {
-            DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
-            Document document = documentBuilder.newDocument();
-
-            Element llavesElement = document.createElement("llaves");
-            document.appendChild(llavesElement);
-
-            for (String enlace : enlaces) {
-                driver.get(enlace);
-                Thread.sleep(2000); // Espera corta para asegurar la carga de la página
-
-                // Obtener el nombre de la llave
-                WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
-                String nombre_llave = nombre.getText();
-
-                // Obtener el precio de la llave
-                WebElement precio = driver.findElement(By.className("bthixlgmwxbzrkuwifzzyvnpey"));
-                String precio_llave = precio.getText();
-
-                // Crear el elemento XML de la llave
-                Element llaveElement = document.createElement("llave");
-                llavesElement.appendChild(llaveElement);
-
-                // Crear el elemento XML del nombre
-                Element nombreElement = document.createElement("nombre");
-                nombreElement.appendChild(document.createTextNode(nombre_llave));
-                llaveElement.appendChild(nombreElement);
-
-                // Crear el elemento XML del precio
-                Element precioElement = document.createElement("precio");
-                precioElement.appendChild(document.createTextNode(precio_llave));
-                llaveElement.appendChild(precioElement);
-
-                // Encontrar las cajas que se pueden abrir con la llave
-                List<WebElement> open = driver.findElements(By.className("uahaobodgycugfmkhrqpjvevkh"));
-
-                int i = 1;
-                for (WebElement key : open) {
-                    // Encontrar las cajas que la llave puede abrir
-                    WebElement cajas = key.findElement(By.className("jbpjkjachbxfigkusfwkkdcznu"));
-                        Element caseElement = document.createElement("caja_que_puedo_abrir_" + i);
-                        caseElement.appendChild(document.createTextNode(cajas.getText()));
-                        llaveElement.appendChild(caseElement);
-                        i++;
-
-                }
-            }
-
-            // Crear el archivo XML
-            TransformerFactory transformerFactory = TransformerFactory.newInstance();
-            Transformer transformer = transformerFactory.newTransformer();
-            transformer.setOutputProperty(OutputKeys.INDENT, "YES");
-            transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
-
-            DOMSource source = new DOMSource(document);
-            StreamResult result = new StreamResult(new File("llaves.xml"));
-            transformer.transform(source, result);
-
-            System.out.println("Archivo XML generado correctamente");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-
-
-
 
     public void sacarCajas() throws InterruptedException {
         FirefoxOptions options = new FirefoxOptions();
