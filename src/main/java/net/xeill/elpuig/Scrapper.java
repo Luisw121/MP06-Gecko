@@ -42,25 +42,20 @@ public class Scrapper {
 
         ArrayList<String> listaEnlaces = new ArrayList<String>();
 
-        //bucle para recorrer todas las armas
         for (WebElement fila : filasDeArmas) {
-
             List<WebElement> armas = fila.findElements(By.className("brzpbogxsgrlikcnlwpafrzdyt"));
 
             for (WebElement arma : armas) {
-                // Guardar los enlaces em un ArrayList<String>
                 listaEnlaces.add(arma.findElement(By.tagName("a")).getAttribute("href"));
             }
         }
-        //Creamos un archivo csv
+
         String archivocsv1 = "datos_armas.csv";
 
-        try (CSVWriter csvWriter = new CSVWriter(new FileWriter(archivocsv1))) {
-            //Creamos array que luego se escribira en el csv
-            String[] hello = {"Nombre del arma", "Damage LMB", "Damage RMB", "Kill Award", "Running Speed", "Side"};
-            csvWriter.writeNext(hello);
+        try (FileWriter fileWriter = new FileWriter(archivocsv1)) {
+            String[] header = {"Nombre del arma", "Damage LMB", "Damage RMB", "Kill Award", "Running Speed", "Side"};
+            fileWriter.append(String.join(",", header)).append("\n");
 
-            //ahora creamos bucle para recorrer todos los enlaces y obtnerer las estadisticas
             for (String enlace : listaEnlaces) {
                 driver.get(enlace);
 
@@ -68,26 +63,16 @@ public class Scrapper {
                 WebElement nombre = driver.findElement(By.className("rdmwocwwwyeqwxiiwtdwuwgwkh"));
                 String nombreArma = nombre.getText();
 
-                //en este string guardaremos todas las estadisticas
-                //StringBuilder estadisticas = new StringBuilder();
-                String[] datosArmaArray = new String[6];
-                datosArmaArray[0] = nombreArma;
+                List<String> datosArmaList = new ArrayList<>();
+                datosArmaList.add(nombreArma);
 
-                int i = 1;
                 for (WebElement stat : stats) {
                     WebElement numeros = stat.findElement(By.className("jykqpwpklhfwmblgijelpcvbzy"));
-                    //estadisticas.append("Estadisticas: " + estats.getText()).append(" ").append(numeros.getText()).append(", ");
-
-                    // if estats == "DAMAGE LBR" --> lo meto en la posicion X
-
-                    datosArmaArray[i] = numeros.getText();
-                    i++;
+                    datosArmaList.add(numeros.getText());
                 }
-                //ahora escribimos en el archivo CSV
-                csvWriter.writeNext(datosArmaArray);
 
+                fileWriter.append(String.join(",", datosArmaList)).append("\n");
                 System.out.println("Imprimiendo en datos_armas.csv");
-
             }
         } catch (IOException e) {
             e.printStackTrace();
